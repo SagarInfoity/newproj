@@ -1,0 +1,34 @@
+
+#content-header#content-header.cstm-hdrrr2 {
+    height: 113px;
+}
+#content-header#content-header.cstm-hdrrr2 .dblhdr-cstmm-hdrsnd {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+#content-header#content-header.cstm-hdrrr2 .dshbdhdrbtn {
+    line-height: 0.7;
+    padding-bottom: 14px;
+    padding-top: 14px;
+    opacity: 0.5;
+    color: #333e63 !important;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    background: none;
+    border: none;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 100;
+    text-transform: none;
+    letter-spacing: normal;
+    border-bottom: 4px solid transparent;
+    font-family: 'Circular-Book' !important;
+}
+#content-header#content-header.cstm-hdrrr2 .dshbdhdrbtn:hover {
+    opacity: 1;
+}
+#content-header#content-header.cstm-hdrrr2 .nvhdr.active .dshbdhdrbtn {
+    color: #333e63 !important;
+    border-bottom: 4px solid #ff5745;
+    opacity: 1;
+}
