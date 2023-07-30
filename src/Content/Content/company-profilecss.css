@@ -1,4 +1,35 @@
 
+.cstmicncxz.cmpy-prfl-mdl2-dv7-inp-icn:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    margin-top: 2.5px;
+    margin-left: 2.5px;
+    content: "";
+    background-color: #fff;
+    border-radius: 4px;
+    transition: .25s background-color cubic-bezier(.23,1,.32,1);
+}
+
+.cstmcxz2.cmpy-prfl-a10 {
+    margin: 0 10px;
+}
+
+.tekila6csinpcurncy.tekila6csinpcurncy {
+    position: relative;
+}
+
+.euro-symbol {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+  }
+
 .cmpy-prfl-img1 {
     box-sizing: border-box;
     border-radius: 2px;

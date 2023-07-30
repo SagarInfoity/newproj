@@ -16,7 +16,7 @@ export const Password = () => {
         else {
             inpdlferr.addClass('hide');
 
-            window.location.href = '/dashboard/home';
+            window.location.href = '/dashboard/index';
         }
 
       };

@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import $ from 'jquery';
 import '../Content/Content/profilecss.css';
-import { Headerschclssrm} from '../headerschclassroom';
+import { Headermain } from '../headermain';
 import { BrowserRouter, Route, Routes, NavLink, Link } from 'react-router-dom';
 import { isNamespaceExport } from "typescript";
 import useLoader from "../useLoader";
@@ -110,7 +110,7 @@ export const Userprofile = () => {
     };
 
     return <div>
-        <Headerschclssrm />
+        <Headermain />
  
         <div className="be-wrapper be-login innerwrapper mt-4p" id="login">
          

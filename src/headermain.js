@@ -12,7 +12,7 @@ export const Headermain = () => {
     const [showSidebar, setshowSidebar] = useState(false);
     const handleCloseSidebar = () => setshowSidebar(false);
     const handleShowSidebar = () => {
-        setshowSidebar(true);
+        setshowSidebar(false); //true for enabling the sidebar
     }
 
     const location = useLocation();
@@ -22,10 +22,10 @@ export const Headermain = () => {
         const path = location.pathname;
         if (path === '/dashboard/home') {
           setPageTitle('Dashboard');
-        } else if (path === '/company-profile/address-info' || path === '/company-profile/details' || path === '/company-profile/admins' || path === '/company-profile/permissions' || path === '/company-profile/projects' || path === '/company-profile/tax-info' || path === '/add-admin/basic-info' || path === '/add-admin/permissions' || path === '/add-admin/roles') {
-          setPageTitle('Company Profile');
-        } else if (path === '/hiring/overview') {
-          setPageTitle('Hiring');
+        } else if (path === '/student/studentdetails' || path === '/student/academicdetails' || path === '/student/coursedetails') {
+          setPageTitle('Student Profile');
+        } else if (path === '/u/profile') {
+          setPageTitle('Profile');
         }
       }, [location.pathname]);
 
@@ -39,7 +39,7 @@ export const Headermain = () => {
                                     <i className="fa fa-bars"></i>
                                 </div>
                                 <div className='row m-0 cstmmthdrimgdv' alt="Back Button">
-                                    <Link to="/dashboard/home" className="hdrmncstmedtt1">
+                                    <Link to="/dashboard/index" className="hdrmncstmedtt1">
                                         <img src="https://res.cloudinary.com/infoi/image/upload/v1641466337/Header%20Logo/main-logo_ulakd4.svg" className="hdrmncstmedtt1img" width="120" style={{marginTop: '-4px', height: '30px'}} />
                                     </Link>
                                     <div className="row m-0">

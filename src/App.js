@@ -51,12 +51,9 @@ import { ResultDetailsStutoSchPage } from './result/Detailsstutosch';
 import { ResultDetailsTchrtoSchPage } from './result/Detailstchrtosch';
 import { ResultDetailsTchrRsltPage } from './result/Detailstchrresult';
 import { Home } from './dashboard/home';
-import { CompanyProfileDetails } from './company-profile/details';
-import { CompanyProfileTaxInfo } from './company-profile/tax-info';
-import { CompanyProfileProjects } from './company-profile/projects';
-import { CompanyProfilePermissions } from './company-profile/permissions';
-import { CompanyProfileAddressInfo } from './company-profile/address-info';
-import { CompanyProfileAdmins } from './company-profile/admins';
+import { DashboardIndex } from './dashboard/index';
+import { StudentDetails } from './student/studentdetails';
+import { StudentCourseDetails } from './student/coursedetails';
 import { AddAdminBasicInfo } from './add-admin/basic-info';
 import { AddAdminRoles } from './add-admin/roles';
 import { AddAdminPermissions } from './add-admin/permissions';
@@ -70,6 +67,7 @@ import { AddJobSalaryAndPerks } from './jobprofile/salary-perks';
 import { ViewJob_Details } from './jobprofile/viewjob-details';
 import { ViewInternship_Details } from './jobprofile/viewinternship-details';
 import { CandidateBasicInfo } from './candidates/basic-info';
+import { StudentAcademicDetails } from './student/academicdetails';
 import { Error404Page } from './error/Error404';
 import { Error500Page } from './error/Error500';
 import { Error100Page } from './error/Error100';
@@ -133,12 +131,8 @@ export const App = () => {
                 <Route path='/result/detailstchrtosch' element={<ResultDetailsTchrtoSchPage />} />
                 <Route path='/result/detailstchrresult' element={<ResultDetailsTchrRsltPage />} />
                 <Route path='/dashboard/home' element={<Home />} />
-                <Route path='/company-profile/details' element={<CompanyProfileDetails />} />
-                <Route path='/company-profile/tax-info' element={<CompanyProfileTaxInfo />} />
-                <Route path='/company-profile/projects' element={<CompanyProfileProjects />} />
-                <Route path='/company-profile/permissions' element={<CompanyProfilePermissions />} />
-                <Route path='/company-profile/address-info' element={<CompanyProfileAddressInfo />} />
-                <Route path='/company-profile/admins' element={<CompanyProfileAdmins />} />
+                <Route path='/dashboard/index' element={<DashboardIndex />} />
+                <Route path='/student/studentdetails' element={<StudentDetails />} />
                 <Route path='/add-admin/basic-info' element={<AddAdminBasicInfo />} />
                 <Route path='/add-admin/roles' element={<AddAdminRoles />} />
                 <Route path='/add-admin/permissions' element={<AddAdminPermissions />} />
@@ -152,6 +146,8 @@ export const App = () => {
                 <Route path='/jobprofile/viewjob-details' element={<ViewJob_Details />} />
                 <Route path='/jobprofile/viewinternship-details' element={<ViewInternship_Details />} />
                 <Route path='/candidates/basic-info' element={<CandidateBasicInfo />} />
+                <Route path='/student/academicdetails' element={<StudentAcademicDetails />} />
+                <Route path='/student/coursedetails' element={<StudentCourseDetails />} />
                 <Route path='*' element={<Error404Page />} />
                 <Route path='/error/error500' element={<Error500Page />} />
                 <Route path='/error/error100' element={<Error100Page />} />

@@ -4,6 +4,11 @@
     padding-top: 6rem !important;
 }
 
+.nmdvhvrbt:hover {
+    cursor: pointer;
+    color: blue;
+}
+
 .hrng-dv1 {
     margin-bottom: 32px;
 }
@@ -390,6 +395,7 @@
 }
 .jbdv5-3b:focus {
     box-shadow: rgba(18, 52, 102, 0.1) 0px 0px 0px 2px;
+    color: #fff;
 }
 .jbdv5-3c {
     display: inline-flex;

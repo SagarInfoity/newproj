@@ -3,13 +3,13 @@ import $ from 'jquery';
 import '../Content/Content/company-profilecss.css';
 import { BrowserRouter, Route, Routes, NavLink, Link } from 'react-router-dom';
 
-export const CompanyProfileUsernameDetails = () => {
+export const StudentProfileUsernameDetails = () => {
 
 
     return <div>
 
-                        <div style={{minHeight: 128, paddingBottom: 16, display: 'flex', WebkitBoxAlign: 'center', alignItems: 'center', flexWrap: 'wrap'}}>
-                            <div>
+                        <div className="row m-0 col-sm-12 pl-0 pr-0" style={{minHeight: 128, paddingBottom: 16}}>
+                            <div className="col-sm-6 p-0">
                                 <h2 style={{fontSize: 31, lineHeight: '1.25', color: '#333e63', fontWeight: 600, margin: 0, textTransform: 'capitalize', letterSpacing: 'normal'}}>
                                     Username
                                 </h2>
@@ -23,6 +23,9 @@ export const CompanyProfileUsernameDetails = () => {
                                         </li>
                                     </ul>
                                 </div>
+                            </div>
+                            <div className="col-sm-6 p-0 text-right pt-5">
+                                <button className="jbdv5-3a">Actions</button>
                             </div>
                         </div>                
                 
