@@ -5,11 +5,6 @@ import { BrowserRouter, Route, Routes, NavLink, Link } from 'react-router-dom';
 
 export const StudentReviewSidebar = () => {
 
-    const [isExpanded, setIsExpanded] = useState(false);
-
-    const toggleAccordion = () => {
-        setIsExpanded(!isExpanded);
-    };
 
     return <div>
 
@@ -19,14 +14,6 @@ export const StudentReviewSidebar = () => {
                                     <NavLink to='/student/studentreviewdetails' className={({ isActive }) => (isActive ? 'prfl-ulla prfl-ullacxzx1 cmpny-prfl-ullacs3 active' : 'prfl-ulla prfl-ullacxzx1 cmpny-prfl-ullacs3 inactive')} >
                                         <img src="/images/check-icon.svg" className="prfl-ullacxzx1img" />
                                         <span>Verification (1/2)</span>
-                                        <div>
-                                            <div>
-                                                <Accordion title="Section 1" content={<div>Content of section 1</div>} />
-                                                <Accordion title="Section 2" content={<div>Content of section 2</div>} />
-                                                <Accordion title="Section 3" content={<div>Content of section 3</div>} />
-                                                <Accordion title="Section 4" content={<div>Content of section 4</div>} />
-                                            </div>
-                                        </div>
                                     </NavLink>
                                 </li>
                                 <li>
