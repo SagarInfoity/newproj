@@ -24,9 +24,11 @@ export const Headermain = () => {
           setPageTitle('Dashboard');
         } else if (path === '/student/studentdetails' || path === '/student/academicdetails' || path === '/student/coursedetails') {
           setPageTitle('Student Profile');
+        } else if (path === '/student/studentreviewdetails') {
+          setPageTitle('Student Review Details');
         } else if (path === '/u/profile') {
-          setPageTitle('Profile');
-        }
+            setPageTitle('Company Profile');
+          }
       }, [location.pathname]);
 
     return <div>

@@ -53,6 +53,7 @@ import { ResultDetailsTchrRsltPage } from './result/Detailstchrresult';
 import { Home } from './dashboard/home';
 import { DashboardIndex } from './dashboard/index';
 import { StudentDetails } from './student/studentdetails';
+import { StudentReviewDetails } from './student/studentreviewdetails';
 import { StudentCourseDetails } from './student/coursedetails';
 import { AddAdminBasicInfo } from './add-admin/basic-info';
 import { AddAdminRoles } from './add-admin/roles';
@@ -133,6 +134,7 @@ export const App = () => {
                 <Route path='/dashboard/home' element={<Home />} />
                 <Route path='/dashboard/index' element={<DashboardIndex />} />
                 <Route path='/student/studentdetails' element={<StudentDetails />} />
+                <Route path='/student/studentreviewdetails' element={<StudentReviewDetails />} />
                 <Route path='/add-admin/basic-info' element={<AddAdminBasicInfo />} />
                 <Route path='/add-admin/roles' element={<AddAdminRoles />} />
                 <Route path='/add-admin/permissions' element={<AddAdminPermissions />} />

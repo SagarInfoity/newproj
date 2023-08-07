@@ -647,7 +647,11 @@ export const DashboardIndex = () => {
                                                     <td className="jbdv6-b4-2">Fitness Training</td> 
                                                     <td className="jbdv6-b4-2">New Delhi</td>   
                                                     <td className="jbdv6-b4-2">-</td> 
-                                                    <td className="jbdv6-b4-2">03/16/2023</td>                                                   
+                                                    <td className="jbdv6-b4-2">
+                                                        <Link to='/student/studentreviewdetails'>
+                                                            Start
+                                                        </Link>
+                                                    </td>                                                   
                                                 </tr>
                                                 <tr className="jbdv6-b3-2">
                                                     <td className="jbdv6-b4-2">Full Time</td>   

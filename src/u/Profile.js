@@ -5,7 +5,8 @@ import { Headermain } from '../headermain';
 import { BrowserRouter, Route, Routes, NavLink, Link } from 'react-router-dom';
 import { isNamespaceExport } from "typescript";
 import useLoader from "../useLoader";
-import axios from 'axios';
+import Button from 'react-bootstrap/Button';
+import Select from 'react-select';
 
 export const Userprofile = () => {
    
@@ -109,6 +110,36 @@ export const Userprofile = () => {
 
     };
 
+    const CountryList = [
+        { value: 'India', label: 'India' },
+        { value: 'UK', label: 'UK' },
+        { value: 'US', label: 'US' }
+    ];
+
+    const [empDrpDwnValue, setEmpDrpDwnValue] = useState(null);
+
+    const handleChange1 = e => {
+        setEmpDrpDwnValue(e.value);
+    }
+
+    const editform1 = () => {
+        $('#dtlsgnrlinfo-viwfld').addClass('hide');
+        $('#dtlsgnrlinfo-viwfld2').removeClass('hide');
+        $('#editbtnx1').addClass('hide');
+    }
+
+    const cancelbtnx1 = () => {
+        $('#dtlsgnrlinfo-viwfld2').addClass('hide');
+        $('#dtlsgnrlinfo-viwfld').removeClass('hide');
+        $('#editbtnx1').removeClass('hide');
+    }
+
+    const savebtnx1 = () => {
+        $('#dtlsgnrlinfo-viwfld2').addClass('hide');
+        $('#dtlsgnrlinfo-viwfld').removeClass('hide');
+        $('#editbtnx1').removeClass('hide');
+    }
+
     return <div>
         <Headermain />
  
@@ -119,17 +150,18 @@ export const Userprofile = () => {
                 <div className="col-md-2 col-lg-2 pr-0 tblt-vw-prfl1">
                     <div style={{position: 'relative'}}>
                         <div style={{inset: 0}}>
-                        <div className="tblt-vw-prfl1-dv" style={{height: 152, width: 152, marginBottom: 8, marginLeft: 'auto'}}>
-                            <div style={{boxSizing: 'border-box', backgroundColor: '#fff', opacity: 1, boxShadow: 'rgb(214,222,233) 0px 0px 0px 2px', display: 'flex', WebkitBoxPack: 'center', justifyContent: 'center', WebkitBoxAlign: 'center', alignItems: 'center', fontSize: 48, lineHeight: 1, fontWeight: 700, textTransform: 'none', letterSpacing: 'normal', color: 'rgb(255, 255, 255)', width: 152, minWidth: 152, minHeight: 152, height: 152}}>
-                                {/* <img src="https://res.cloudinary.com/infoi/image/upload/v1643706338/Profile%20Icon/Icon-150x150_o33qvq.png" style={{borderRadius: '50%'}} /> */}
-                                <div className="cngimghvrdvvdvd">
+                        <div className="tblt-vw-prfl1-dv" style={{height: 154, width: 154, marginBottom: 8, marginLeft: 'auto'}}>
+                            <div style={{boxSizing: 'border-box', backgroundColor: '#fff', opacity: 1, boxShadow: 'rgb(214,222,233) 0px 0px 0px 2px', display: 'flex', WebkitBoxPack: 'center', justifyContent: 'center', WebkitBoxAlign: 'center', alignItems: 'center', lineHeight: 1, width: 164, minWidth: 164, minHeight: 164, height: 164}}>
+                                <img src="https://res.cloudinary.com/infoi/image/upload/v1677558398/Header%20Logo/Infoity-Favicon_eqjenk.png" style={{height: 'inherit', width: 'inherit'}} />
+                                {/* <img src="https://res.cloudinary.com/infoi/image/upload/v1643706338/Profile%20Icon/Icon-150x150_o33qvq.png" /> */}
+                                {/* <div className="cngimghvrdvvdvd">
                                     {loading && <div className="loader"></div>}
                                     <img src={image} className="imggnprlfl" alt="Image" />
                                     <div className="imgdvpfdvv">
                                         <p className="imgdvpflpp">Upload Image</p>
                                         <input type="file" accept="image/*" className="imgdvpfll" ref={inputRef} onChange={handleImageChange} />
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         </div>
@@ -139,7 +171,7 @@ export const Userprofile = () => {
                         <ul style={{listStyle: 'none', flexDirection: 'column', margin: 0, padding: 0}}>
                             <li style={{padding: '10px 0 5px'}}>
                                 <a className="prfl-ulla active" id="prnlinf-a" onClick={prsnalinfo}>
-                                    <span>Personal Info</span>
+                                    <span>Company Info</span>
                                 </a>
                             </li>
                         </ul>
@@ -147,209 +179,171 @@ export const Userprofile = () => {
                     </div>
                     </div>
                     <div className="col-md-8 row  ml-1-5rm cs-st-pd tblt-prfl-vw-dv1">
-                    <div className="col-sm-12 col-md-12 mt-4 mb-4">
+                    <div className="col-sm-12 col-md-12 mt-2 mb-2">
                         <div style={{minHeight: 128, paddingBottom: 16, display: 'flex', WebkitBoxAlign: 'center', alignItems: 'center', flexWrap: 'wrap'}}>
                             <div>
-                                <h2 style={{fontSize: 32, lineHeight: '1.25', color: '#333e63', fontWeight: 600, margin: 0, textTransform: 'capitalize', letterSpacing: 'normal'}}>
+                                <h2 style={{fontSize: 31, lineHeight: '42px', color: '#333e63', fontFamily: 'Circular-Medium', margin: 0, textTransform: 'capitalize', letterSpacing: 'normal'}}>
                                     Username
                                 </h2>
-                            <div style={{fontSize: 14, lineHeight: '1.43', color: 'rgb(68, 68, 68)', textTransform: 'none', letterSpacing: 'normal', paddingTop: 4}}>
-                                <ul style={{marginTop: 8, marginBottom: 8, paddingLeft: 0, listStyleType: 'none'}}>
-                                    <li style={{paddingBottom: 8, color: '#333e63'}}>
-                                        Admin at Feedii (<span className="font-bold" title="School Code">School Code</span>)
-                                    </li>
-                                    <li style={{color: '#333e63'}}>
-                                        Registered on Dec 24, 2022
-                                    </li>
-                                </ul>
+                                <div style={{fontSize: 16, color: 'rgb(68, 68, 68)', textTransform: 'none', letterSpacing: 'normal', paddingTop: 4}}>
+                                    <ul style={{marginTop: 8, marginBottom: 8, paddingLeft: 0, listStyleType: 'none'}}>
+                                        <li style={{color: '#333e63', lineHeight: '24px',}}>
+                                            Admin at Feedii (<span className="font-bold" title="School Code">School Code</span>)
+                                        </li>
+                                        <li style={{color: '#333e63', lineHeight: '24px',}}>
+                                            Registered on Dec 24, 2022
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
                         </div>
                     </div>
 
                     <div className="tab" id="personalinfoddv1" style={{display: "block"}}>
-                        <div className="col-md-12 mb-5">
+                        <div className="col-md-12 mb-4">
                             <div className="tekila1">
-                                <div className="box-header cs-st-bx-hdr">
-                                <h3 className="tekila2">
-                                    <span style={{borderBottom: '2px solid #ff5745', paddingBottom: 12}}>Basic Info</span>
-                                </h3>
+                                <div className="box-header cmpy-prfl-a4 cmp-prfl-brdr-btm">
+                                    <div className="row m-0">
+                                        <div className="col-sm-6 p-0">
+                                            <h5 className="cmpy-prfl-a5">
+                                                <span>Basic Information</span>
+                                            </h5>
+                                        </div>
+                                        <div className="col-sm-6 pr-0">
+                                            <div className="text-right">
+                                                <div className="pt-0 cmpy-prfl-cspdd2">
+                                                    <div onClick={editform1} id="editbtnx1">
+                                                        <span className="cmpy-prfl-a8 mt-2">
+                                                            <i className="fa fa-pen fs-10px mr-1"></i> Edit
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="box-body cs-st-pd2" id="profile" style={{display: 'block'}}>
+                                <div className="box-body" id="dtlsgnrlinfo-viwfld">
                                     <form>
-                                        <div className="form-group row">
-                                            <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Name</label>
-                                            <div className="col-sm-8 col-xs-8">
-                                                <label className="col-form-label tekila4">Username</label>
+                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                            <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Company Name</label>
+                                            <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
+                                                <div className="col-sm-9 col-xs-9 pl-0">
+                                                    <label className="col-form-label tekila4">Infoity Technology Pvt. Ltd.</label>
+                                                </div>
+                                                <div className="col-sm-3"></div>
                                             </div>
                                         </div>
-                                        <div className="form-group row">
-                                            <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">School Name</label>
-                                            <div className="col-sm-8 col-xs-8">
-                                                <label className="col-form-label tekila4">School Name</label>
+                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                            <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Company Address</label>
+                                            <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
+                                                <div className="col-sm-9 col-xs-9 pl-0">
+                                                    <label className="col-form-label tekila4">Gurugram Haryana</label>
+                                                </div>
+                                                <div className="col-sm-3"></div>
                                             </div>
                                         </div>
-                                        <div className="form-group row">
-                                            <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Designation</label>
-                                            <div className="col-sm-8 col-xs-8">
-                                                <label className="col-form-label tekila4">Designation</label>
+                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                            <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Country</label>
+                                            <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
+                                                <div className="col-sm-9 col-xs-9 pl-0">
+                                                    <label className="col-form-label tekila4">India</label>
+                                                </div>
+                                                <div className="col-sm-3"></div>
+                                            </div>
+                                        </div>
+                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                            <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Admin Name</label>
+                                            <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
+                                                <div className="col-sm-9 col-xs-9 pl-0">
+                                                    <label className="col-form-label tekila4">Sagar Dahiya</label>
+                                                </div>
+                                                <div className="col-sm-3"></div>
+                                            </div>
+                                        </div>
+                                        <div className="form-group row cmp-prfl-mtcsfld ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 mb-3">
+                                            <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">HR Contact</label>
+                                            <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
+                                                <div className="col-sm-9 col-xs-9 pl-0">
+                                                    <label className="col-form-label tekila4">9XXXXXXXXX</label>
+                                                </div>
+                                                <div className="col-sm-3"></div>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
-                                <div className="box-body cs-st-pd2" id="profile_open" style={{display: 'none'}}>
-                                    <form id="add_basicinfo">
-                                        <div className="form-group row">
-                                        <label htmlFor="inputEmail3" className="col-sm-4 col-form-label tekila3">Name</label>
-                                        <div className="col-sm-8 tekila9">
-                                            <input type="text" className="form-control tekila6" id="name" defaultValue='Contact Number' readOnly />     
-                                            <p className="text-danger cs-st-txt-danger" id="fstname" />
+                                <div className="box-body hide" id="dtlsgnrlinfo-viwfld2">
+                                    <form>
+                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 pl-3">
+                                            <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Company Name</label>
+                                            <div className="col-sm-8 col-xs-8 pl-0 row m-0">
+                                                <div className="col-sm-9 col-xs-9 pl-0">
+                                                    <div className="col-sm-12 pl-0 pr-0 mb-2">
+                                                        <input type="text" className="tekila6 dsble" id="cmpnyprflinpfld01" placeholder="Company Name" autocomplete="off" maxlength="100" defaultValue="Infoity Technology Pvt. Ltd." readOnly />
+                                                        <div className="flderrmsgdv" id="cmpnyprflinpfld01-msg">Please enter company name</div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
+                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4">
+                                            <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Company Address</label>
+                                            <div className="col-sm-8 col-xs-8 pl-0 row m-0">
+                                                <div className="col-sm-9 col-xs-9 pl-0">
+                                                    <div className="col-sm-12 pl-0 pr-0 mb-2">
+                                                        <input type="text" className="tekila6" id="cmpnyprflinpfld02" placeholder="Company Address" autocomplete="off" maxlength="100" defaultValue="Gurugram Haryana" />
+                                                        <div className="flderrmsgdv" id="cmpnyprflinpfld02-msg">Please enter company address</div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className="form-group row">
-                                        <label htmlFor className="col-sm-4 col-form-label tekila3">School Name</label>
-                                        <div className="col-sm-8 tekila9">
-                                            <input type="text" className="form-control tekila6" defaultValue='School Name' readOnly />
-                                            <p className="text-danger cs-st-txt-danger" id="schlnm" />
+                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4">
+                                            <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Country</label>
+                                            <div className="col-sm-8 col-xs-8 pl-0 row m-0">
+                                                <div className="col-sm-9 col-xs-9 pl-0">
+                                                    <Select options={CountryList} defaultValue={{value: 'India', label: 'India'}} className="crsr-pntr" value={CountryList.find(obj => obj.value === empDrpDwnValue)} onChange={handleChange1} />
+                                                    <div className="flderrmsgdv" id="mdlinpflderrdrpdwn">Please select country</div>
+                                                    {empDrpDwnValue && <div style={{ display: 'none' }}>
+                                                        <div id="mdlempdrpdwnvll">{empDrpDwnValue}</div>
+                                                    </div>}
+                                                </div>
+                                            </div>
                                         </div>
+                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4">
+                                            <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Admin Name</label>
+                                            <div className="col-sm-8 col-xs-8 pl-0 row m-0">
+                                                <div className="col-sm-9 col-xs-9 pl-0">
+                                                    <div className="col-sm-12 pl-0 pr-0 mb-2">
+                                                        <input type="text" className="tekila6" id="cmpnyprflinpfld02" placeholder="Admin Name" autocomplete="off" maxlength="100" defaultValue="Sagar Dahiya" />
+                                                        <div className="flderrmsgdv" id="cmpnyprflinpfld02-msg">Please enter admin name</div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className="form-group row">
-                                        <label htmlFor className="col-sm-4 col-form-label tekila3">Designation</label>
-                                        <div className="col-sm-8 tekila9">
-                                            <input type="text" className="form-control tekila6" defaultValue='Designation' readOnly />
-                                            <p id="dsgntn" className="val_error cs-st-txt-danger" />
+                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4">
+                                            <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">HR Contact</label>
+                                            <div className="col-sm-8 col-xs-8 pl-0 row m-0">
+                                                <div className="col-sm-9 col-xs-9 pl-0">
+                                                    <div className="col-sm-12 pl-0 pr-0 mb-2">
+                                                        <input type="text" className="tekila6" id="cmpnyprflinpfld02" placeholder="HR Contact" autocomplete="off" maxlength="10" defaultValue="9XXXXXXXXX" />
+                                                        <div className="flderrmsgdv" id="cmpnyprflinpfld02-msg">Please enter HR contact number</div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
+                                        <div style={{borderTop: '1px solid #d8dce2'}}>
+                                            <div className="col-sm-12 text-right mt-4 mb-4 pr-4">
+                                                <Button variant="primary modalGrayBtn mr-3" onClick={cancelbtnx1}>
+                                                    Cancel
+                                                </Button>
+                                                <Button variant="primary modalRedBtn mr-2" onClick={savebtnx1}>
+                                                    Update
+                                                </Button>
+                                            </div>
                                         </div>
                                     </form>
-                                    <div className="modal-footer">
-                                        <button className="tekila7 cs-st-bx-btns btn-cstmprfl1" onClick={edtbscinfocnclbtn}>Cancel</button>
-                                        <button className="tekila8 cs-st-bx-btns btn-cstmprfl2" type="submit" onClick={edtbscinfosvbtn}>Save</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-12 pt-16px mb-5">
-                            <div className="tekila1">
-                                <div className="box-header cs-st-bx-hdr">
-                                <h3 className="tekila2">
-                                    <span style={{borderBottom: '2px solid #ff5745', paddingBottom: 12}}>Contact Info</span>
-                                    {/* <a onClick={editcontactinfo} id="editcntctai1">
-                                        <i className="fas fa-pen float-right tekila5" title="Edit" />
-                                    </a>
-                                    <a id="editcntctai2" style={{display: 'none'}}>
-                                        <i className="fas fa-pen float-right tekila5" title="Edit" />
-                                    </a> */}
-                                </h3>
-                                </div>
-                                <div className="box-body cs-st-pd2" id="contact">
-                                <form>
-                                   
-                                    <div className="form-group row">
-                                    <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Email</label>
-                                    <div className="col-sm-8 col-xs-8">
-                                        <label className="col-form-label tekila4">Email</label>
-                                    </div>
-                                    </div>
-                                    <div className="form-group row">
-                                    <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">School Website</label>
-                                    <div className="col-sm-8 col-xs-8">
-                                        <label className="col-form-label tekila4">Website</label>
-                                    </div>
-                                    </div>
-                                    <div className="form-group row">
-                                    <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">City</label>
-                                    <div className="col-sm-8 col-xs-8">
-                                        <label className="col-form-label tekila4">City</label>
-                                    </div>
-                                    </div>
-                                    <div className="form-group row">
-                                    <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">State</label>
-                                    <div className="col-sm-8 col-xs-8">
-                                        <label className="col-form-label tekila4">State</label>
-                                    </div>
-                                    </div>
-                                    <div className="form-group row">
-                                    <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Country</label>
-                                    <div className="col-sm-8 col-xs-8">
-                                        <label className="col-form-label tekila4">Country</label>
-                                    </div>
-                                    </div>
-                                </form>
-                                </div>
-                                <div className="box-body cs-st-pd2" id="contact_open" style={{display: 'none'}}>
-                                <form action method="post" id="add_contactinfo">
-                                    <div className="form-group row">
-                                    <label htmlFor className="col-sm-4 col-form-label tekila3">Email</label>
-                                    <div className="col-sm-8 tekila9">
-                                        <input type="text" className="form-control tekila6" readOnly id="email" value='Email' />
-                                        <p id="emailerr" className="val_error cs-st-txt-danger" />
-                                    </div>
-                                    </div>
-                                    <div className="form-group row">
-                                    <label htmlFor className="col-sm-4 col-form-label tekila3">School Website</label>
-                                    <div className="col-sm-8 tekila9">
-                                        <input type="text" className="form-control tekila6" readOnly id="swbsite" value='Website' />
-                                        <p id="entrwbsit" className="val_error cs-st-txt-danger" />
-                                    </div>
-                                    </div>
-                                    <div className="form-group row">
-                                        <label htmlFor className="col-sm-4 col-form-label tekila3">City</label>
-                                        <div className="col-sm-8 tekila9">
-                                            <input type="text" className="form-control tekila6" readOnly id="city" value='City' />
-                                            <p id="entrcity" className="val_error cs-st-txt-danger" />
-                                        </div>
-                                    </div>
-                                    <div className="form-group row">
-                                        <label htmlFor className="col-sm-4 col-form-label tekila3">State</label>
-                                        <div className="col-sm-8 tekila9">
-                                            <input type="text" className="form-control tekila6" readOnly id="state" value='State' />
-                                            <p id="entrstt" className="val_error cs-st-txt-danger" />
-                                        </div>
-                                    </div>
-                                    <div className="form-group row">
-                                        <label htmlFor className="col-sm-4 col-form-label tekila3">Country</label>
-                                        <div className="col-sm-8 tekila9">
-                                            <input type="text" className="form-control tekila6" readOnly id="cntryy" value='Country' />
-                                            <p id="entrcntry" className="val_error cs-st-txt-danger" />
-                                        </div>
-                                    </div>
-                                </form>
-                                <div className="modal-footer">
-                                    <button className="tekila7 cs-st-bx-btns btn-cstmprfl1" onClick={editcontactinfocancelbtn}>Cancel</button>
-                                    <button className="tekila8 cs-st-bx-btns btn-cstmprfl2" onClick={editcontactinfosvbtn} type="submit">Save</button>
-                                </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    {/* <div className="tab" id="accountinfodvv1">
-                            <div className="col-md-12">
-                                <div className="tekila1 mb-5">
-                                    <div className="box-header cs-st-bx-hdr">
-                                    <h3 className="tekila2">
-                                        <span style={{borderBottom: '2px solid #ff5745', paddingBottom: 12}}>Account Information</span>
-                                    </h3>
-                                    </div>
-                                    <div className="box-body cs-st-pd2" id="accntinfo">
-                                    <form>
-                                        <div className="form-group row">
-                                        <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">ARN Number </label>
-                                        <div className="col-sm-8 col-xs-8">
-                                            <label className="col-form-label tekila4">Go premium to get ARN number!</label>
-                                        </div>
-                                        </div>
-                                        <div className="form-group row">
-                                        <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Subscription Type</label>
-                                        <div className="col-sm-8 col-xs-8">
-                                            <label className="col-form-label tekila4">Free Account</label>
-                                        </div>
-                                        </div>
-                                    </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
                     </div>
                 </div>
             </div>
