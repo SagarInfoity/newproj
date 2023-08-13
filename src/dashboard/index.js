@@ -78,7 +78,9 @@ export const DashboardIndex = () => {
                                 <div className="col-sm-12">
                                     <div className="dshbrd-dvv1 col-sm-12 row ml-0 mr-0">
                                         <div className="col-sm-9 mt-2 mb-2">
-                                            <div className="nwsrvdvdvd1">Coventry University Students</div>
+                                            <a href='https://infoity-coventry.netlify.app/' target="_blank">
+                                                <div className="nwsrvdvdvd1 hvrdvcxz">Coventry University Students</div>
+                                            </a>
                                         </div>
                                         <div className="col-sm-3 text-right">
                                             <input className="nwsrvdvdvi1" placeholder="Search Student..." type="text" style={{width: "95%"}} />

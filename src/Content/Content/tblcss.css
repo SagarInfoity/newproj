@@ -857,6 +857,9 @@ tbody.cstmtbdyy tr td:nth-child(1) {
     font-size: 16px;
     font-family: 'Circular-Medium';
 }
+.hvrdvcxz:hover {
+    text-decoration: underline;
+}
 .nwsrvdvdvd2 {
     font-size: 12px;
     line-height: 1.33;
