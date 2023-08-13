@@ -28,13 +28,13 @@ export const StudentReviewSidebar = () => {
                                                 </NavLink>
                                             </li>
                                             <li>
-                                                <NavLink to='/student/studentreviewacademicdetails' className={({ isActive }) => (isActive ? 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 active' : 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 inactive')} >
+                                                <NavLink to='/' className={({ isActive }) => (isActive ? 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 active dsbl-ullacxzxxz1' : 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 inactive dsbl-ullacxzxxz1')} >
                                                     <img src="/images/lock-outline.svg" className="prfl-ullacxzx1img" />
                                                     <span>Academic Details</span>
                                                 </NavLink>
                                             </li>
                                             <li>
-                                                <NavLink to='/student/studentreviewcoursedetails' className={({ isActive }) => (isActive ? 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 active' : 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 inactive')} >
+                                                <NavLink to='/' className={({ isActive }) => (isActive ? 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 active dsbl-ullacxzxxz1' : 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 inactive dsbl-ullacxzxxz1')} >
                                                     <img src="/images/lock-outline.svg" className="prfl-ullacxzx1img" />
                                                     <span>Course Details</span>
                                                 </NavLink>
@@ -46,7 +46,7 @@ export const StudentReviewSidebar = () => {
                             <AccordionItem header={
                                 <div>
                                     <div>
-                                        <span>Sync (0/3)</span>
+                                        <span>Plans (0/3)</span>
                                     </div>
                                 </div>
                             }>
@@ -54,21 +54,21 @@ export const StudentReviewSidebar = () => {
                                     <div>
                                         <ul style={{listStyle: 'none', flexDirection: 'column', margin: 0, padding: 0}}>
                                             <li>
-                                                <NavLink to='/student/studentsyncdetails' className={({ isActive }) => (isActive ? 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 active' : 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 inactive')} >
+                                                <NavLink to='' className={({ isActive }) => (isActive ? 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 active dsbl-ullacxzxxz1' : 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 inactive dsbl-ullacxzxxz1')} >
                                                     <img src="/images/lock-outline.svg" className="prfl-ullacxzx1img" />
-                                                    <span>Student Details</span>
+                                                    <span>Medical Plans</span>
                                                 </NavLink>
                                             </li>
                                             <li>
-                                                <NavLink to='/student/studentsyncacademicdetails' className={({ isActive }) => (isActive ? 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 active' : 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 inactive')} >
+                                                <NavLink to='' className={({ isActive }) => (isActive ? 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 active dsbl-ullacxzxxz1' : 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 inactive dsbl-ullacxzxxz1')} >
                                                     <img src="/images/lock-outline.svg" className="prfl-ullacxzx1img" />
-                                                    <span>Academic Details</span>
+                                                    <span>Dental Plans</span>
                                                 </NavLink>
                                             </li>
                                             <li>
-                                                <NavLink to='/student/studentsynccoursedetails' className={({ isActive }) => (isActive ? 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 active' : 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 inactive')} >
+                                                <NavLink to='' className={({ isActive }) => (isActive ? 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 active dsbl-ullacxzxxz1' : 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 inactive dsbl-ullacxzxxz1')} >
                                                     <img src="/images/lock-outline.svg" className="prfl-ullacxzx1img" />
-                                                    <span>Course Details</span>
+                                                    <span>Vision Plans</span>
                                                 </NavLink>
                                             </li>
                                         </ul>
@@ -78,7 +78,7 @@ export const StudentReviewSidebar = () => {
                             <AccordionItem header={
                                 <div>
                                     <div>
-                                        <span>Reviews (0/3)</span>
+                                        <span>Info (0/2)</span>
                                     </div>
                                 </div>
                             }>
@@ -88,19 +88,33 @@ export const StudentReviewSidebar = () => {
                                             <li>
                                                 <NavLink to='' className={({ isActive }) => (isActive ? 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 active dsbl-ullacxzxxz1' : 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 inactive dsbl-ullacxzxxz1')} >
                                                     <img src="/images/lock-outline.svg" className="prfl-ullacxzx1img" />
-                                                    <span>Student Details</span>
+                                                    <span>Conact Information</span>
                                                 </NavLink>
                                             </li>
                                             <li>
                                                 <NavLink to='' className={({ isActive }) => (isActive ? 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 active dsbl-ullacxzxxz1' : 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 inactive dsbl-ullacxzxxz1')} >
                                                     <img src="/images/lock-outline.svg" className="prfl-ullacxzx1img" />
-                                                    <span>Academic Details</span>
+                                                    <span>Social Security Information</span>
                                                 </NavLink>
                                             </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </AccordionItem>
+                            <AccordionItem header={
+                                <div>
+                                    <div>
+                                        <span>Review (0/1)</span>
+                                    </div>
+                                </div>
+                            }>
+                                <div>
+                                    <div>
+                                        <ul style={{listStyle: 'none', flexDirection: 'column', margin: 0, padding: 0}}>
                                             <li>
                                                 <NavLink to='' className={({ isActive }) => (isActive ? 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 active dsbl-ullacxzxxz1' : 'prfl-ulla prfl-ullacxzx1 prfl-ullacxzxxz1 cmpny-prfl-ullacs3 inactive dsbl-ullacxzxxz1')} >
                                                     <img src="/images/lock-outline.svg" className="prfl-ullacxzx1img" />
-                                                    <span>Course Details</span>
+                                                    <span>Review & Confirm</span>
                                                 </NavLink>
                                             </li>
                                         </ul>

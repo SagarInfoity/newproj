@@ -10,7 +10,7 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Select from 'react-select';
 
-export const StudentReviewDetails = () => {
+export const StudentSyncDetails = () => {
     
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -520,7 +520,7 @@ export const StudentReviewDetails = () => {
                         <div className="col-sm-12 col-md-12 mt-2 mb-2">
                             <div className="col-sm-12 pl-0 pr-0" style={{marginBottom: 32}}>
                                 <h3 style={{fontSize: 24, lineHeight: '1.33', color: 'rgb(34, 34, 34)', fontFamily: 'Circular-Medium', textTransform: 'capitalize', letterSpacing: 'normal'}}>
-                                    First, let's review your personal information.
+                                     First, Let's Sync Your Personal Information.
                                 </h3>
                             </div>
                         </div>
@@ -539,7 +539,7 @@ export const StudentReviewDetails = () => {
                                     </div>
                                     <div className="box-body" id="dtlsgnrlinfo-viwfld">
                                         <form>
-                                            <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-4 mt-1 pb-2">
+                                            <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-4 pb-2 mt-1">
                                                 <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">First Name</label>
                                                 <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
                                                     <div className="col-sm-9 col-xs-9 pl-0">
@@ -632,7 +632,7 @@ export const StudentReviewDetails = () => {
                                     </div>
                                     <div className="box-body" id="contact">
                                         <form>
-                                            <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-4 mt-1 pb-2 ">
+                                            <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-4 pb-2 mt-1">
                                                 <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Email</label>
                                                 <div className="col-sm-8 col-xs-8 pl-0">
                                                     <div className="col-sm-9 col-xs-9 pl-0">
@@ -721,7 +721,7 @@ export const StudentReviewDetails = () => {
                                     </div>
                                     <div className="box-body" id="contact">
                                         <form>
-                                            <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-4 mt-1 pb-2 ">
+                                            <div className="form-group row ml-0 mr-0 cmpy-prfl-a6  pt-4 pb-2 mt-1">
                                                 <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">CV Attached*</label>
                                                 <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fldrdocxz1">
                                                     <div className="col-sm-9 col-xs-9 pl-0">
@@ -769,7 +769,7 @@ export const StudentReviewDetails = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="form-group row  mb-4 ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2">
+                                            <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 mb-4">
                                                 <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Work Experience</label>
                                                 <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fldrdocxz5">
                                                     <div className="col-sm-9 col-xs-9 pl-0">

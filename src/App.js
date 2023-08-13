@@ -54,6 +54,11 @@ import { Home } from './dashboard/home';
 import { DashboardIndex } from './dashboard/index';
 import { StudentDetails } from './student/studentdetails';
 import { StudentReviewDetails } from './student/studentreviewdetails';
+import { StudentReviewAcademicDetails } from './student/studentreviewacademicdetails';
+import { StudentReviewCourseDetails } from './student/studentreviewcoursedetails';
+import { StudentSyncDetails } from './student/studentsyncdetails';
+import { StudentSyncAcademicDetails } from './student/studentsyncacademicdetails';
+import { StudentSyncCourseDetails } from './student/studentsynccoursedetails';
 import { StudentCourseDetails } from './student/coursedetails';
 import { AddAdminBasicInfo } from './add-admin/basic-info';
 import { AddAdminRoles } from './add-admin/roles';
@@ -135,6 +140,11 @@ export const App = () => {
                 <Route path='/dashboard/index' element={<DashboardIndex />} />
                 <Route path='/student/studentdetails' element={<StudentDetails />} />
                 <Route path='/student/studentreviewdetails' element={<StudentReviewDetails />} />
+                <Route path='/student/studentreviewacademicdetails' element={<StudentReviewAcademicDetails />} />
+                <Route path='/student/studentreviewcoursedetails' element={<StudentReviewCourseDetails />} />
+                <Route path='/student/studentsyncdetails' element={<StudentSyncDetails />} />
+                <Route path='/student/studentsyncacademicdetails' element={<StudentSyncAcademicDetails />} />
+                <Route path='/student/studentsynccoursedetails' element={<StudentSyncCourseDetails />} />
                 <Route path='/add-admin/basic-info' element={<AddAdminBasicInfo />} />
                 <Route path='/add-admin/roles' element={<AddAdminRoles />} />
                 <Route path='/add-admin/permissions' element={<AddAdminPermissions />} />

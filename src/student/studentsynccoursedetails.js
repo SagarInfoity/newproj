@@ -10,7 +10,7 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Select from 'react-select';
 
-export const StudentReviewDetails = () => {
+export const StudentSyncCourseDetails = () => {
     
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -155,10 +155,9 @@ export const StudentReviewDetails = () => {
         { value: 'Karnataka', label: 'Karnataka' }
     ];
 
-    const ysnoList = [
-        { value: 'Yes', label: 'Yes' },
-        { value: 'No', label: 'No' }
-    ];
+    const schlrshpList = [
+        { value: 'Contact For Scholarship', label: 'Contact For Scholarship'}
+    ]
 
 
 
@@ -520,7 +519,7 @@ export const StudentReviewDetails = () => {
                         <div className="col-sm-12 col-md-12 mt-2 mb-2">
                             <div className="col-sm-12 pl-0 pr-0" style={{marginBottom: 32}}>
                                 <h3 style={{fontSize: 24, lineHeight: '1.33', color: 'rgb(34, 34, 34)', fontFamily: 'Circular-Medium', textTransform: 'capitalize', letterSpacing: 'normal'}}>
-                                    First, let's review your personal information.
+                                     First, Let's Sync Your Personal Information.
                                 </h3>
                             </div>
                         </div>
@@ -532,132 +531,39 @@ export const StudentReviewDetails = () => {
                                         <div className="row m-0">
                                             <div className="col-sm-6 p-0">
                                                 <h5 className="cmpy-prfl-a5" style={{textTransform: 'capitalize', fontFamily: 'Circular-Book', fontSize: 16}}>
-                                                    <span>Basic Information</span>
+                                                    <span>Course Information</span>
                                                 </h5>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="box-body" id="dtlsgnrlinfo-viwfld">
                                         <form>
-                                            <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-4 mt-1 pb-2">
-                                                <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">First Name</label>
+                                            <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-4 mt-1 pb-2 ">
+                                                <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Course Name</label>
                                                 <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
                                                     <div className="col-sm-9 col-xs-9 pl-0">
                                                         <div className="col-sm-12 pl-0 pr-0 mb-2">
-                                                            <input type="text" className="tekila6" id="cmpnyprflinpfld01" placeholder="First Name" autocomplete="off" maxlength="100" defaultValue="User first name" />
-                                                            <div className="flderrmsgdv" id="cmpnyprflinpfld01-msg">Please enter first name</div>
+                                                            <input type="text" className="tekila6" id="cmpnyprflinpfld01" placeholder="Course Name" autocomplete="off" maxlength="30" defaultValue="Biotechnology M Sc -Intake August/September/October/November 2022" />
+                                                            <div className="flderrmsgdv" id="cmpnyprflinpfld01-msg">Please enter value</div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
-                                                <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Last Name</label>
+                                                <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">University Name</label>
                                                 <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
                                                     <div className="col-sm-9 col-xs-9 pl-0">
                                                         <div className="col-sm-12 pl-0 pr-0 mb-2">
-                                                            <input type="text" className="tekila6" id="cmpnyprflinpfld01" placeholder="Last Name" autocomplete="off" maxlength="100" defaultValue="User last name" />
-                                                            <div className="flderrmsgdv" id="cmpnyprflinpfld01-msg">Please enter last name</div>
+                                                            <input type="text" className="tekila6" id="cmpnyprflinpfld01" placeholder="University Name" autocomplete="off" maxlength="30" defaultValue="Coventry University" />
+                                                            <div className="flderrmsgdv" id="cmpnyprflinpfld01-msg">Please enter value</div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
-                                                <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Date of Birth (DOB)</label>
-                                                <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
-                                                    <div className="col-sm-9 col-xs-9 pl-0">
-                                                        <div className="col-sm-12 pl-0 pr-0 mb-2">
-                                                            <input type="date" className="tekila6" id="cmpnyprflinpfld01" placeholder="Date of Birth (DOB)" autocomplete="off" maxlength="100" defaultValue="2023-08-08" />
-                                                            <div className="flderrmsgdv" id="cmpnyprflinpfld01-msg">Please select date</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
-                                                <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Gender</label>
-                                                <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
-                                                    <div className="col-sm-9 col-xs-9 pl-0">
-                                                        <Select options={GenderList} defaultValue={{value: 'Male', label: 'Male'}} className="crsr-pntr" value={GenderList.find(obj => obj.value === empDrpDwnValue)} onChange={handleChange1} />
-                                                        <div className="flderrmsgdv" id="mdlinpflderrdrpdwn">Please select gender</div>
-                                                        {empDrpDwnValue && <div style={{ display: 'none' }}>
-                                                            <div id="mdlempdrpdwnvll">{empDrpDwnValue}</div>
-                                                        </div>}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
-                                                <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Marital Status*</label>
-                                                <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
-                                                    <div className="col-sm-9 col-xs-9 pl-0">
-                                                        <Select options={MaritalList} defaultValue={{value: 'Married', label: 'Married'}} className="crsr-pntr" value={MaritalList.find(obj => obj.value === empDrpDwnValue)} onChange={handleChange1} />
-                                                        <div className="flderrmsgdv" id="mdlinpflderrdrpdwn">Please select marital status</div>
-                                                        {empDrpDwnValue && <div style={{ display: 'none' }}>
-                                                            <div id="mdlempdrpdwnvll">{empDrpDwnValue}</div>
-                                                        </div>}
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="form-group row  ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 mb-3">
-                                                <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Passport Number</label>
-                                                <div className="col-sm-8 col-xs-8 pl-0">
-                                                    <div className="col-sm-9 col-xs-9 pl-0">
-                                                        <div className="col-sm-12 pl-0 pr-0 mb-2">
-                                                            <input type="text" className="tekila6" id="cmpnyprflinpfld01" placeholder="Passport Number" autocomplete="off" maxlength="100" defaultValue="P123456" />
-                                                            <div className="flderrmsgdv" id="cmpnyprflinpfld01-msg">Please enter passport number</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div className="hide">
-                                        <div className="box-body cmpy-prfl-a6 cmpy-prfl-prjctsdv3">
-                                            <div className="cmpy-prfl-prjctsdv4">
-                                                <i className="fa fa-info-circle cmpy-prfl-prjctsdv4icn"></i>
-                                                <div className="cmpy-prfl-prjctsdv5">No data found.</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-12 pt-16px mb-5">
-                                <div className="tekila1">
-                                    <div className="box-header cmpy-prfl-a4 cmp-prfl-brdr-btm">
-                                        <div className="row m-0">
-                                            <div className="col-sm-6 p-0">
-                                                <h5 className="cmpy-prfl-a5">
-                                                    <span>Contact Information</span>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="box-body" id="contact">
-                                        <form>
-                                            <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-4 mt-1 pb-2 ">
-                                                <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Email</label>
-                                                <div className="col-sm-8 col-xs-8 pl-0">
-                                                    <div className="col-sm-9 col-xs-9 pl-0">
-                                                        <div className="col-sm-12 pl-0 pr-0 mb-2">
-                                                            <input type="text" className="tekila6" id="cmpnyprflinpfld01" placeholder="Email" autocomplete="off" maxlength="100" defaultValue="test@email.com" />
-                                                            <div className="flderrmsgdv" id="cmpnyprflinpfld01-msg">Please enter email</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
-                                                <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Contact No.</label>
-                                                <div className="col-sm-8 col-xs-8 pl-0">
-                                                    <div className="col-sm-9 col-xs-9 pl-0">
-                                                        <div className="col-sm-12 pl-0 pr-0 mb-2">
-                                                            <input type="text" className="tekila6" id="cmpnyprflinpfld01" placeholder="Contact No." autocomplete="off" maxlength="100" defaultValue="1234567899" />
-                                                            <div className="flderrmsgdv" id="cmpnyprflinpfld01-msg">Please enter contact number</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
                                                 <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Country</label>
                                                 <div className="col-sm-8 col-xs-8 pl-0">
-                                                    <div className="col-sm-9 col-xs-9 pl-0">
+                                                    <div className="col-sm-9 pl-0 pr-3 mb-2">
                                                         <Select options={CountryList} defaultValue={{value: 'India', label: 'India'}} className="crsr-pntr" value={CountryList.find(obj => obj.value === empDrpDwnValue)} onChange={handleChange1} />
                                                         <div className="flderrmsgdv" id="mdlinpflderrdrpdwn">Please select country</div>
                                                         {empDrpDwnValue && <div style={{ display: 'none' }}>
@@ -666,118 +572,37 @@ export const StudentReviewDetails = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
-                                                <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">State</label>
-                                                <div className="col-sm-8 col-xs-8 pl-0">
-                                                    <div className="col-sm-9 col-xs-9 pl-0">
-                                                        <Select options={StateList} defaultValue={{value: 'New Delhi', label: 'New Delhi'}} className="crsr-pntr" value={StateList.find(obj => obj.value === empDrpDwnValue)} onChange={handleChange1} />
-                                                        <div className="flderrmsgdv" id="mdlinpflderrdrpdwn">Please select state</div>
-                                                        {empDrpDwnValue && <div style={{ display: 'none' }}>
-                                                            <div id="mdlempdrpdwnvll">{empDrpDwnValue}</div>
-                                                        </div>}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
-                                                <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">City</label>
+                                            <div className="form-group row  ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 mb-3">
+                                                <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Published Tuition Fees</label>
                                                 <div className="col-sm-8 col-xs-8 pl-0">
                                                     <div className="col-sm-9 col-xs-9 pl-0">
                                                         <div className="col-sm-12 pl-0 pr-0 mb-2">
-                                                            <input type="text" className="tekila6" id="cmpnyprflinpfld01" placeholder="City" autocomplete="off" maxlength="100" defaultValue="-" />
-                                                            <div className="flderrmsgdv" id="cmpnyprflinpfld01-msg">Please enter city</div>
+                                                            <input type="text" className="tekila6" id="cmpnyprflinpfld01" placeholder="Tuition Fees" autocomplete="off" maxlength="30" defaultValue="16000.00" />
+                                                            <div className="flderrmsgdv" id="cmpnyprflinpfld01-msg">Please enter value</div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="form-group row  mb-3 ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2">
-                                                <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Address</label>
+                                            <div className="form-group row  ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 mb-3">
+                                                <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Scholarship</label>
+                                                <div className="col-sm-8 col-xs-8 pl-0">
+                                                    <div className="col-sm-9 pl-0 pr-3 mb-2">
+                                                        <Select options={schlrshpList} defaultValue={{value: 'Contact For Scholarship', label: 'Contact For Scholarship'}} className="crsr-pntr" value={schlrshpList.find(obj => obj.value === empDrpDwnValue)} onChange={handleChange1} />
+                                                        <div className="flderrmsgdv" id="mdlinpflderrdrpdwn">Please select country</div>
+                                                        {empDrpDwnValue && <div style={{ display: 'none' }}>
+                                                            <div id="mdlempdrpdwnvll">{empDrpDwnValue}</div>
+                                                        </div>}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="form-group row  ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 mb-3">
+                                                <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Fees (CAS)</label>
                                                 <div className="col-sm-8 col-xs-8 pl-0">
                                                     <div className="col-sm-9 col-xs-9 pl-0">
                                                         <div className="col-sm-12 pl-0 pr-0 mb-2">
-                                                            <input type="text" className="tekila6" id="cmpnyprflinpfld01" placeholder="Address" autocomplete="off" maxlength="100" defaultValue="-" />
-                                                            <div className="flderrmsgdv" id="cmpnyprflinpfld01-msg">Please enter address</div>
+                                                            <input type="text" className="tekila6" id="cmpnyprflinpfld01" placeholder="Fees (CAS)" autocomplete="off" maxlength="30" defaultValue="0" />
+                                                            <div className="flderrmsgdv" id="cmpnyprflinpfld01-msg">Please enter value</div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div className="hide">
-                                        <div className="box-body cmpy-prfl-a6 cmpy-prfl-prjctsdv3">
-                                            <div className="cmpy-prfl-prjctsdv4">
-                                                <i className="fa fa-info-circle cmpy-prfl-prjctsdv4icn"></i>
-                                                <div className="cmpy-prfl-prjctsdv5">No data found.</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-12 pt-16px mb-5">
-                                <div className="tekila1">
-                                    <div className="box-header cmpy-prfl-a4 cmp-prfl-brdr-btm">
-                                        <h5 className="cmpy-prfl-a5">
-                                            <span>Other Information</span>
-                                        </h5>
-                                    </div>
-                                    <div className="box-body" id="contact">
-                                        <form>
-                                            <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-4 mt-1 pb-2 ">
-                                                <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">CV Attached*</label>
-                                                <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fldrdocxz1">
-                                                    <div className="col-sm-9 col-xs-9 pl-0">
-                                                        <Select options={ysnoList} defaultValue={{value: 'Yes', label: 'Yes'}} className="crsr-pntr" value={ysnoList.find(obj => obj.value === empDrpDwnValue)} onChange={handleChange1} />
-                                                        <div className="flderrmsgdv" id="mdlinpflderrdrpdwn">Please select value</div>
-                                                        {empDrpDwnValue && <div style={{ display: 'none' }}>
-                                                            <div id="mdlempdrpdwnvll">{empDrpDwnValue}</div>
-                                                        </div>}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
-                                                <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">SOP Attached*</label>
-                                                <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fldrdocxz2">
-                                                    <div className="col-sm-9 col-xs-9 pl-0">
-                                                        <Select options={ysnoList} defaultValue={{value: 'Yes', label: 'Yes'}} className="crsr-pntr" value={ysnoList.find(obj => obj.value === empDrpDwnValue)} onChange={handleChange1} />
-                                                        <div className="flderrmsgdv" id="mdlinpflderrdrpdwn">Please select value</div>
-                                                        {empDrpDwnValue && <div style={{ display: 'none' }}>
-                                                            <div id="mdlempdrpdwnvll">{empDrpDwnValue}</div>
-                                                        </div>}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
-                                                <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">LOR1 Attached*</label>
-                                                <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fldrdocxz3">
-                                                    <div className="col-sm-9 col-xs-9 pl-0">
-                                                        <Select options={ysnoList} defaultValue={{value: 'Yes', label: 'Yes'}} className="crsr-pntr" value={ysnoList.find(obj => obj.value === empDrpDwnValue)} onChange={handleChange1} />
-                                                        <div className="flderrmsgdv" id="mdlinpflderrdrpdwn">Please select value</div>
-                                                        {empDrpDwnValue && <div style={{ display: 'none' }}>
-                                                            <div id="mdlempdrpdwnvll">{empDrpDwnValue}</div>
-                                                        </div>}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
-                                                <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">LOR2 Attached*</label>
-                                                <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fldrdocxz4">
-                                                    <div className="col-sm-9 col-xs-9 pl-0">
-                                                        <Select options={ysnoList} defaultValue={{value: 'Yes', label: 'Yes'}} className="crsr-pntr" value={ysnoList.find(obj => obj.value === empDrpDwnValue)} onChange={handleChange1} />
-                                                        <div className="flderrmsgdv" id="mdlinpflderrdrpdwn">Please select value</div>
-                                                        {empDrpDwnValue && <div style={{ display: 'none' }}>
-                                                            <div id="mdlempdrpdwnvll">{empDrpDwnValue}</div>
-                                                        </div>}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="form-group row  mb-4 ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2">
-                                                <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Work Experience</label>
-                                                <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fldrdocxz5">
-                                                    <div className="col-sm-9 col-xs-9 pl-0">
-                                                        <Select options={ysnoList} defaultValue={{value: 'No', label: 'No'}} className="crsr-pntr" value={ysnoList.find(obj => obj.value === empDrpDwnValue)} onChange={handleChange1} />
-                                                        <div className="flderrmsgdv" id="mdlinpflderrdrpdwn">Please select value</div>
-                                                        {empDrpDwnValue && <div style={{ display: 'none' }}>
-                                                            <div id="mdlempdrpdwnvll">{empDrpDwnValue}</div>
-                                                        </div>}
                                                     </div>
                                                 </div>
                                             </div>

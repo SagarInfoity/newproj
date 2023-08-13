@@ -24,7 +24,7 @@ export const Headermain = () => {
           setPageTitle('Dashboard');
         } else if (path === '/student/studentdetails' || path === '/student/academicdetails' || path === '/student/coursedetails') {
           setPageTitle('Student Profile');
-        } else if (path === '/student/studentreviewdetails') {
+        } else if (path === '/student/studentreviewdetails' || path === '/student/studentreviewacademicdetails' || path === '/student/studentreviewcoursedetails') {
           setPageTitle('Student Review Details');
         } else if (path === '/u/profile') {
             setPageTitle('Company Profile');
