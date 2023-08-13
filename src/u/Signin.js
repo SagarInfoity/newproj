@@ -45,7 +45,7 @@ export const Signin = () => {
                                         <button type="submit" className="btn btn-primary btn-xl nw-btn" id="signinbtn">Continue</button>
                                     </div>
                                     </form>
-                                    <span className="splash-description"> <a href="/getstarted/details" className="Nwbs2">  New User? Create account</a></span>
+                                    <span className="splash-description"> <a href="" className="Nwbs2">  New User? Create account</a></span>
                                     <div className="u-bumperTop--lg u-padTop u-borderTop" />
                                     <div className="cus-cstmr">
                                     For further assistance or enquiry please contact us.<br /> Call: <a href="tel:+91-8800004564" className="Nwbs2">+91-8800004564</a> | Email: <a href="mailto:hello@infoity.com" className="Nwbs2">hello@infoity.com</a>

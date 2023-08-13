@@ -50,13 +50,16 @@ export const Password = () => {
                                         <button type="submit" className="btn btn-primary btn-xl nw-btn" id="signinbtn">Sign in</button>
                                     </div>
                                     </form>
-                                    <div className="Nwbs3">
+                                    <span className="splash-description">
+                                        <a href="/u/signin" class="Nwbs2">Go back to Sign-in</a>
+                                    </span>
+                                    {/* <div className="Nwbs3">
                                         <a href="/u/signin" className="txt-dec-none"><span className="Nwbs2">Go back to Sign-in</span></a>
                                         <span className="cus-spn">|</span>
                                         <span className="a-divider" onClick={Forgotpass} id="forgot_password"><span className="Nwbs2 crsr-pointr">Forgot Password?</span></span>
-                                    </div>
+                                    </div> */}
                                     <div className="u-bumperTop--lg u-padTop u-borderTop" />
-                                    <div className="cus-cstmr cus-cstmr-prfl">
+                                    <div className="cus-cstmr">
                                     For further assistance or enquiry please contact us.<br /> Call: <a href="tel:+91-8800004564" className="Nwbs2">+91-8800004564</a> | Email: <a href="mailto:hello@infoity.com" className="Nwbs2">hello@infoity.com</a>
                                     </div>
                                 </div>
