@@ -626,22 +626,21 @@ export const StudentCourseDetails = () => {
                                                 <div className="col-sm-9 col-xs-9 pl-0">
                                                     <label className="col-form-label tekila4">Coventry University</label>
                                                 </div>
-                                                <div className="col-sm-3"></div>
                                             </div>
                                         </div>
-                                        <div className="form-group row  ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 mb-3">
+                                        <div className="form-group row  ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Country</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">Crizac Ltd</label>
                                             </div>
                                         </div>
-                                        <div className="form-group row  ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 mb-3">
+                                        <div className="form-group row  ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Published Tuition Fees</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">16600.0000</label>
                                             </div>
                                         </div>
-                                        <div className="form-group row  ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 mb-3">
+                                        <div className="form-group row  ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Scholarship</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">Contact For Scholarship</label>
