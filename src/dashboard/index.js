@@ -101,10 +101,10 @@ export const DashboardIndex = () => {
 
                                                                 <tr>
                                                                     <td>
-                                                                        <div className="tbltddv1 txttrnsfrm-cpl text-truncate cstmwdtbldv" title>
+                                                                        <Link to='/student/studentdetails' className="tbltddv1 txttrnsfrm-cpl text-truncate cstmwdtbldv crsr-pntr" title>
                                                                             <img src="https://res.cloudinary.com/infoi/image/upload/v1677570405/Dashboard-Icons/alex_ujdyda.png" className="nwsrvdvdvdimg mr-3" />
                                                                             <span className="blu-clr">Alex Chin</span>
-                                                                        </div>
+                                                                        </Link>
                                                                     </td>
                                                                     <td className="cstmtblltbwddwd">
                                                                         <span className="tbltddv3">Feb 20, 2023 - Apr 20, 2023</span>
@@ -120,7 +120,9 @@ export const DashboardIndex = () => {
                                                                         </div>
                                                                     </td>
                                                                     <td className="text-right">
-                                                                        <button className="modalRedBtn cstmmbtnn">Start</button>
+                                                                        <Link to='/student/studentreviewdetails'>
+                                                                            <button className="modalRedBtn cstmmbtnn">Start</button>
+                                                                        </Link>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
