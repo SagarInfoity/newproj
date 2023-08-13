@@ -519,8 +519,8 @@ export const StudentReviewDetails = () => {
                     <div className="col-md-8 cmpy-prfl-a1 cs-st-pd tblt-prfl-vw-dv1">
                         <div className="col-sm-12 col-md-12 mt-2 mb-2">
                             <div className="col-sm-12 pl-0 pr-0" style={{marginBottom: 32}}>
-                                <h3 style={{fontSize: 24, lineHeight: '1.33', color: 'rgb(34, 34, 34)', fontFamily: 'Circular-Medium', textTransform: 'capitalize', letterSpacing: 'normal'}}>
-                                    First, let's review your personal information.
+                                <h3 style={{fontSize: 24, lineHeight: '1.33', color: '#333e63', fontFamily: 'Circular-Medium', textTransform: 'capitalize', letterSpacing: 'normal'}}>
+                                    First, let's review student details.
                                 </h3>
                             </div>
                         </div>
@@ -544,7 +544,7 @@ export const StudentReviewDetails = () => {
                                                 <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
                                                     <div className="col-sm-9 col-xs-9 pl-0">
                                                         <div className="col-sm-12 pl-0 pr-0 mb-2">
-                                                            <input type="text" className="tekila6" id="cmpnyprflinpfld01" placeholder="First Name" autocomplete="off" maxlength="100" defaultValue="User first name" />
+                                                            <input type="text" className="tekila6" id="cmpnyprflinpfld01" placeholder="First Name" autocomplete="off" maxlength="100" defaultValue="Alok" />
                                                             <div className="flderrmsgdv" id="cmpnyprflinpfld01-msg">Please enter first name</div>
                                                         </div>
                                                     </div>
@@ -555,7 +555,7 @@ export const StudentReviewDetails = () => {
                                                 <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
                                                     <div className="col-sm-9 col-xs-9 pl-0">
                                                         <div className="col-sm-12 pl-0 pr-0 mb-2">
-                                                            <input type="text" className="tekila6" id="cmpnyprflinpfld01" placeholder="Last Name" autocomplete="off" maxlength="100" defaultValue="User last name" />
+                                                            <input type="text" className="tekila6" id="cmpnyprflinpfld01" placeholder="Last Name" autocomplete="off" maxlength="100" defaultValue="Singh" />
                                                             <div className="flderrmsgdv" id="cmpnyprflinpfld01-msg">Please enter last name</div>
                                                         </div>
                                                     </div>
@@ -619,7 +619,7 @@ export const StudentReviewDetails = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-12 pt-16px mb-5">
+                            <div className="col-md-12 pt-16px mb-4">
                                 <div className="tekila1">
                                     <div className="box-header cmpy-prfl-a4 cmp-prfl-brdr-btm">
                                         <div className="row m-0">
@@ -977,7 +977,7 @@ export const StudentReviewDetails = () => {
                         <div className="col-sm-8 col-xs-8 pl-0 row m-0 pr-0">
                             <div className="col-sm-12 col-xs-12 pr-0 pl-0 row m-0 cmpy-prfl-cspdd1">
                                 <div className="col-sm-12 pl-0 pr-0 mb-2">
-                                    <input type="text" className="tekila6" id="mdlinpfld421" placeholder="First Name" autocomplete="off" maxlength="30" defaultValue="User's First Name" />
+                                    <input type="text" className="tekila6" id="mdlinpfld421" placeholder="First Name" autocomplete="off" maxlength="30" defaultValue="Alok" />
                                     <div className="flderrmsgdv" id="mdlinpflderr421">Please enter first name</div>
                                 </div>
                             </div>
@@ -988,7 +988,7 @@ export const StudentReviewDetails = () => {
                         <div className="col-sm-8 col-xs-8 pl-0 row m-0 pr-0">
                             <div className="col-sm-12 col-xs-12 pr-0 pl-0 row m-0 cmpy-prfl-cspdd1">
                                 <div className="col-sm-12 pl-0 pr-0 mb-2">
-                                    <input type="text" className="tekila6" id="mdlinpfld422" placeholder="Last Name" autocomplete="off" maxlength="30" defaultValue="User's Last Name" />
+                                    <input type="text" className="tekila6" id="mdlinpfld422" placeholder="Last Name" autocomplete="off" maxlength="30" defaultValue="Singh" />
                                     <div className="flderrmsgdv" id="mdlinpflderr422">Please enter last name</div>
                                 </div>
                             </div>

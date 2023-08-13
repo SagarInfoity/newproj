@@ -518,8 +518,8 @@ export const StudentSyncCourseDetails = () => {
                     <div className="col-md-8 cmpy-prfl-a1 cs-st-pd tblt-prfl-vw-dv1">
                         <div className="col-sm-12 col-md-12 mt-2 mb-2">
                             <div className="col-sm-12 pl-0 pr-0" style={{marginBottom: 32}}>
-                                <h3 style={{fontSize: 24, lineHeight: '1.33', color: 'rgb(34, 34, 34)', fontFamily: 'Circular-Medium', textTransform: 'capitalize', letterSpacing: 'normal'}}>
-                                     First, Let's Sync Your Personal Information.
+                                <h3 style={{fontSize: 24, lineHeight: '1.33', color: '#333e63', fontFamily: 'Circular-Medium', textTransform: 'capitalize', letterSpacing: 'normal'}}>
+                                    Finally, Let's Sync Your Course Details.
                                 </h3>
                             </div>
                         </div>

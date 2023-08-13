@@ -9,7 +9,7 @@ export const StudentProfileLogo = () => {
     return <div>
                 <div className="tblt-vw-prfl1-dv cmpy-prfl-a2">
                     <div className="cmpy-prfl-a3" style={{borderRadius: '100px'}}>
-                        <img src="https://res.cloudinary.com/infoi/image/upload/v1677570405/Dashboard-Icons/alex_ujdyda.png" className="cmpy-prfl-img1" style={{borderRadius: '100px', padding: '0'}} />
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB5U2CHpliMtpWAoFmM6smVO_t0yErb3tfsg&usqp=CAU" className="cmpy-prfl-img1" style={{borderRadius: '100px', padding: '0', objectFit: "cover"}} />
                     </div>
                 </div>
             </div>

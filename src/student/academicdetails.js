@@ -646,7 +646,7 @@ export const StudentAcademicDetails = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-12 pt-16px mb-5">
+                        <div className="col-md-12 pt-16px mb-4">
                             <div className="tekila1">
                                 <div className="box-header cmpy-prfl-a4 cmp-prfl-brdr-btm">
                                     <div className="row m-0">
@@ -728,7 +728,7 @@ export const StudentAcademicDetails = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-12 pt-16px mb-5">
+                        <div className="col-md-12 pt-16px mb-4">
                             <div className="tekila1">
                                 <div className="box-header cmpy-prfl-a4 cmp-prfl-brdr-btm">
                                     <div className="row m-0">

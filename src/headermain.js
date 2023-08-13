@@ -61,13 +61,13 @@ export const Headermain = () => {
 
                         <ul className="nav flex-row order-lg-2 mt--7px cstmhdrmnulcs">
                             <li>
-                                <button type='button' className='cstmhdrmnulcsbtnn'>Checkout</button>
+                                <button type='button' className='cstmhdrmnulcsbtnn' style={{minWidth: 116}}>For Admin</button>
                             </li>
                             <li className="dropdown d-flex align-items-center">
                                 <Dropdown>
                                     <Dropdown.Toggle id="dropdown-basic" className="d-flex align-items-center drpbtnndw">
                                         <div className="avatar">
-                                            <div className="text-truncate csk-pfrl-nm" title='Username'>Username</div>
+                                            <div className="text-truncate csk-pfrl-nm" title='Nitin'>Nitin</div>
                                         </div>
                                         <i className="fa fa-caret-down hdr-fa-icon Aezakmi8"></i>
                                     </Dropdown.Toggle>
@@ -79,7 +79,7 @@ export const Headermain = () => {
                                         </Link>
                                         <Link to='/' className="dropdown-item btnclclclk drpdwnlastitm">
                                             <div style={{minWidth: '32px'}}><img src="https://res.cloudinary.com/infoi/image/upload/q_auto/v1638941210/Header%20Logo/logoutstf607712_mgmuyg.svg" width="22" height="20" alt="Logout Icon" style={{display: 'block', maxWidth: '100%'}} /></div>
-                                            <div style={{paddingLeft: '6px'}}>Log out of Infoity</div>
+                                            <div style={{paddingLeft: '6px'}}>Log out </div>
                                         </Link>
                                     </Dropdown.Menu>
                                 </Dropdown>

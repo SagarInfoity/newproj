@@ -518,8 +518,8 @@ export const StudentReviewCourseDetails = () => {
                     <div className="col-md-8 cmpy-prfl-a1 cs-st-pd tblt-prfl-vw-dv1">
                         <div className="col-sm-12 col-md-12 mt-2 mb-2">
                             <div className="col-sm-12 pl-0 pr-0" style={{marginBottom: 32}}>
-                                <h3 style={{fontSize: 24, lineHeight: '1.33', color: 'rgb(34, 34, 34)', fontFamily: 'Circular-Medium', textTransform: 'capitalize', letterSpacing: 'normal'}}>
-                                    First, let's review your personal information.
+                                <h3 style={{fontSize: 24, lineHeight: '1.33', color: '#333e63', fontFamily: 'Circular-Medium', textTransform: 'capitalize', letterSpacing: 'normal'}}>
+                                    Finally, let's review your course details.
                                 </h3>
                             </div>
                         </div>
@@ -560,7 +560,7 @@ export const StudentReviewCourseDetails = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="form-group row  ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 mb-3">
+                                            <div className="form-group row  ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2">
                                                 <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Country</label>
                                                 <div className="col-sm-8 col-xs-8 pl-0">
                                                     <div className="col-sm-9 pl-0 pr-3 mb-2">
@@ -572,7 +572,7 @@ export const StudentReviewCourseDetails = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="form-group row  ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 mb-3">
+                                            <div className="form-group row  ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2">
                                                 <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Published Tuition Fees</label>
                                                 <div className="col-sm-8 col-xs-8 pl-0">
                                                     <div className="col-sm-9 col-xs-9 pl-0">
@@ -583,7 +583,7 @@ export const StudentReviewCourseDetails = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="form-group row  ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 mb-3">
+                                            <div className="form-group row  ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2">
                                                 <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Scholarship</label>
                                                 <div className="col-sm-8 col-xs-8 pl-0">
                                                     <div className="col-sm-9 pl-0 pr-3 mb-2">

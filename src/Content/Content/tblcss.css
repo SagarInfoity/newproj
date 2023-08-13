@@ -465,6 +465,48 @@ tbody.cstmtbdyy tr td:nth-child(1) {
     width: 50%;
 }
 
+#survytbl #nwsrvytbblll.cstmtable2.mntblcstmxz thead tr th {
+    font-family: 'Circular-Book' !important;
+}
+
+#nwsrvytbblll.cstmtable2.mntblcstmxz thead tr th:nth-child(1) {
+    width: 22%;
+}
+
+#nwsrvytbblll.cstmtable2.mntblcstmxz thead tr th:nth-child(2) {
+    width: 18%;
+    padding: 0.5rem 0.8rem !important;
+}
+
+#nwsrvytbblll.cstmtable2.mntblcstmxz thead tr th:nth-child(3) {
+    width: 10%;
+    padding: 0.5rem 0.8rem !important;
+}
+
+#nwsrvytbblll.cstmtable2.mntblcstmxz thead tr th:nth-child(4) {
+    width: 9%;
+    padding: 0.5rem 0.8rem !important;
+}
+
+#nwsrvytbblll.cstmtable2.mntblcstmxz tbody tr td:nth-child(1) {
+    width: 25%;
+}
+
+#nwsrvytbblll.cstmtable2.mntblcstmxz tbody tr td:nth-child(2) {
+    width: 20% !important;
+    padding: 1.2rem 0.8rem !important;
+}
+
+#nwsrvytbblll.cstmtable2.mntblcstmxz tbody tr td:nth-child(3) {
+    width: 12% !important;
+    padding: 1.2rem 0.8rem !important;
+}
+
+#nwsrvytbblll.cstmtable2.mntblcstmxz tbody tr td:nth-child(4) {
+    width: 9% !important;
+    padding: 1.2rem 0.8rem !important;
+}
+
 #nwsrvytbblll.cstmtable2 thead tr th:nth-child(2) {
     width: 23%;
 }
@@ -1264,6 +1306,10 @@ tbody.schclstbtbdy tr td:last-child {
 }
 .cstmmxhtbdytbb2 {
     max-height: 395px;
+    height: auto;
+}
+.cstmmxhtbdytbb2cxz {
+    max-height: 675px;
     height: auto;
 }
 .cstmsrtbthdbrdr {

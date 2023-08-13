@@ -9,6 +9,49 @@
     color: blue;
 }
 
+.hdnczxccs {
+    font-size: 32px;
+    line-height: 1.25;
+    color: #333e63;
+    text-transform: none;
+    letter-spacing: normal;
+    font-family: 'Circular-Medium';
+}
+
+.imgczxccs {
+    box-sizing: border-box;
+    border-radius: 50%;
+    opacity: 1;
+    box-shadow: rgb(214, 222, 233) 0px 0px 0px 2px;
+    object-fit: cover;
+    min-width: 32px;
+    min-height: 32px;
+    width: 32px;
+    height: 32px;
+}
+
+.imgczxccs:hover {
+    opacity: 1;
+    box-shadow: rgb(214, 222, 233) 0px 0px 0px 3px;
+}
+
+.imgczxccs2 {
+    box-sizing: border-box;
+    border-radius: 50%;
+    opacity: 1;
+    box-shadow: rgb(214, 222, 233) 0px 0px 0px 2px;
+    object-fit: cover;
+    min-width: 24px;
+    min-height: 24px;
+    width: 24px;
+    height: 24px;
+    opacity: 0.5;
+}
+
+.imgczxccs2:hover {
+    opacity: 1;
+}
+
 .hrng-dv1 {
     margin-bottom: 32px;
 }

@@ -183,15 +183,15 @@ export const Userprofile = () => {
                         <div style={{minHeight: 128, paddingBottom: 16, display: 'flex', WebkitBoxAlign: 'center', alignItems: 'center', flexWrap: 'wrap'}}>
                             <div>
                                 <h2 style={{fontSize: 31, lineHeight: '42px', color: '#333e63', fontFamily: 'Circular-Medium', margin: 0, textTransform: 'capitalize', letterSpacing: 'normal'}}>
-                                    Username
+                                    Nitin
                                 </h2>
                                 <div style={{fontSize: 16, color: 'rgb(68, 68, 68)', textTransform: 'none', letterSpacing: 'normal', paddingTop: 4}}>
                                     <ul style={{marginTop: 8, marginBottom: 8, paddingLeft: 0, listStyleType: 'none'}}>
                                         <li style={{color: '#333e63', lineHeight: '24px',}}>
-                                            Admin at Feedii (<span className="font-bold" title="School Code">School Code</span>)
+                                            Total Headcount &nbsp;&nbsp; 20
                                         </li>
                                         <li style={{color: '#333e63', lineHeight: '24px',}}>
-                                            Registered on Dec 24, 2022
+                                            Date Established &nbsp;&nbsp; Aug 15, 2023
                                         </li>
                                     </ul>
                                 </div>
@@ -224,25 +224,25 @@ export const Userprofile = () => {
                                 </div>
                                 <div className="box-body" id="dtlsgnrlinfo-viwfld">
                                     <form>
-                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 mt-1 pb-2 ">
                                             <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Company Name</label>
                                             <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
                                                 <div className="col-sm-9 col-xs-9 pl-0">
-                                                    <label className="col-form-label tekila4">Infoity Technology Pvt. Ltd.</label>
+                                                    <label className="col-form-label tekila4">GA Solutions Private Limited</label>
                                                 </div>
                                                 <div className="col-sm-3"></div>
                                             </div>
                                         </div>
-                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
                                             <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Company Address</label>
                                             <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
                                                 <div className="col-sm-9 col-xs-9 pl-0">
-                                                    <label className="col-form-label tekila4">Gurugram Haryana</label>
+                                                    <label className="col-form-label tekila4">Ground Floor, Wing A, Constantia Bldg, 11, DR U.N. Bramachari Street, Kolkata, West Bengal, 700017</label>
                                                 </div>
                                                 <div className="col-sm-3"></div>
                                             </div>
                                         </div>
-                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
                                             <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Country</label>
                                             <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
                                                 <div className="col-sm-9 col-xs-9 pl-0">
@@ -251,20 +251,20 @@ export const Userprofile = () => {
                                                 <div className="col-sm-3"></div>
                                             </div>
                                         </div>
-                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
                                             <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Admin Name</label>
                                             <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
                                                 <div className="col-sm-9 col-xs-9 pl-0">
-                                                    <label className="col-form-label tekila4">Sagar Dahiya</label>
+                                                    <label className="col-form-label tekila4">Sibendu Roy</label>
                                                 </div>
                                                 <div className="col-sm-3"></div>
                                             </div>
                                         </div>
-                                        <div className="form-group row cmp-prfl-mtcsfld ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 mb-3">
+                                        <div className="form-group row  ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 mb-3">
                                             <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">HR Contact</label>
                                             <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
                                                 <div className="col-sm-9 col-xs-9 pl-0">
-                                                    <label className="col-form-label tekila4">9XXXXXXXXX</label>
+                                                    <label className="col-form-label tekila4"> 9879874562</label>
                                                 </div>
                                                 <div className="col-sm-3"></div>
                                             </div>
@@ -273,29 +273,29 @@ export const Userprofile = () => {
                                 </div>
                                 <div className="box-body hide" id="dtlsgnrlinfo-viwfld2">
                                     <form>
-                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 pl-3">
+                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 mt-1 pb-2 pl-3">
                                             <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Company Name</label>
                                             <div className="col-sm-8 col-xs-8 pl-0 row m-0">
                                                 <div className="col-sm-9 col-xs-9 pl-0">
                                                     <div className="col-sm-12 pl-0 pr-0 mb-2">
-                                                        <input type="text" className="tekila6 dsble" id="cmpnyprflinpfld01" placeholder="Company Name" autocomplete="off" maxlength="100" defaultValue="Infoity Technology Pvt. Ltd." readOnly />
+                                                        <input type="text" className="tekila6 dsble" id="cmpnyprflinpfld01" placeholder="Company Name" autocomplete="off" maxlength="100" defaultValue="GA Solutions Private Limited" readOnly />
                                                         <div className="flderrmsgdv" id="cmpnyprflinpfld01-msg">Please enter company name</div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4">
+                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2">
                                             <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Company Address</label>
                                             <div className="col-sm-8 col-xs-8 pl-0 row m-0">
                                                 <div className="col-sm-9 col-xs-9 pl-0">
                                                     <div className="col-sm-12 pl-0 pr-0 mb-2">
-                                                        <input type="text" className="tekila6" id="cmpnyprflinpfld02" placeholder="Company Address" autocomplete="off" maxlength="100" defaultValue="Gurugram Haryana" />
+                                                        <input type="text" className="tekila6" id="cmpnyprflinpfld02" placeholder="Company Address" autocomplete="off" maxlength="100" defaultValue="Ground Floor, Wing A, Constantia Bldg, 11, DR U.N. Bramachari Street, Kolkata, West Bengal, 700017" />
                                                         <div className="flderrmsgdv" id="cmpnyprflinpfld02-msg">Please enter company address</div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4">
+                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2">
                                             <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Country</label>
                                             <div className="col-sm-8 col-xs-8 pl-0 row m-0">
                                                 <div className="col-sm-9 col-xs-9 pl-0">
@@ -307,23 +307,23 @@ export const Userprofile = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4">
+                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2">
                                             <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Admin Name</label>
                                             <div className="col-sm-8 col-xs-8 pl-0 row m-0">
                                                 <div className="col-sm-9 col-xs-9 pl-0">
                                                     <div className="col-sm-12 pl-0 pr-0 mb-2">
-                                                        <input type="text" className="tekila6" id="cmpnyprflinpfld02" placeholder="Admin Name" autocomplete="off" maxlength="100" defaultValue="Sagar Dahiya" />
+                                                        <input type="text" className="tekila6" id="cmpnyprflinpfld02" placeholder="Admin Name" autocomplete="off" maxlength="100" defaultValue="Sibendu Roy" />
                                                         <div className="flderrmsgdv" id="cmpnyprflinpfld02-msg">Please enter admin name</div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4">
+                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-2 mb-3 pb-2">
                                             <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">HR Contact</label>
                                             <div className="col-sm-8 col-xs-8 pl-0 row m-0">
                                                 <div className="col-sm-9 col-xs-9 pl-0">
                                                     <div className="col-sm-12 pl-0 pr-0 mb-2">
-                                                        <input type="text" className="tekila6" id="cmpnyprflinpfld02" placeholder="HR Contact" autocomplete="off" maxlength="10" defaultValue="9XXXXXXXXX" />
+                                                        <input type="text" className="tekila6" id="cmpnyprflinpfld02" placeholder="HR Contact" autocomplete="off" maxlength="10" defaultValue=" 9879874562" />
                                                         <div className="flderrmsgdv" id="cmpnyprflinpfld02-msg">Please enter HR contact number</div>
                                                     </div>
                                                 </div>

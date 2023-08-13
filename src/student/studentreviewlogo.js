@@ -12,21 +12,21 @@ export const StudentReviewLogo = () => {
                         <div>
                             <Link to='/dashboard/index' >
                                 <i className="fa fa-chevron-left fs-10px mr-2" style={{verticalAlign: 'text-top'}}></i>
-                                <span style={{fontSize: 16}}>Review Details</span>
+                                <span style={{fontSize: 16}}>Back to Dashboard</span>
                             </Link>
                         </div>
                     </div>
                     <div className="tblt-vw-prfl1-dv cmpy-prfl-a2" style={{margin: '32px auto 8px', height: 64, width: 64}}>
                         <div className="cmpy-prfl-a3" style={{borderRadius: '100px', width: 64, height: 64, minWidth: 64, minHeight: 64}}>
-                            <img src="https://res.cloudinary.com/infoi/image/upload/v1677570405/Dashboard-Icons/alex_ujdyda.png" className="cmpy-prfl-img1" style={{borderRadius: '100px', padding: '0'}} />
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB5U2CHpliMtpWAoFmM6smVO_t0yErb3tfsg&usqp=CAU" className="cmpy-prfl-img1" style={{borderRadius: '100px', padding: '0', objectFit: "cover"}} />
                         </div>
                     </div>
                     <div>
                         <div className="studtlrvwlftsdbrdv1">
-                            Alex Chin
+                            Alok Singh
                         </div>
                         <div className="studtlrvwlftsdbrdv2">
-                            Student
+                            CAMS ID - 97311
                         </div>
                     </div>
                 </div>

@@ -553,7 +553,7 @@ export const StudentDetails = () => {
                                             <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">First Name</label>
                                             <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
                                                 <div className="col-sm-9 col-xs-9 pl-0">
-                                                    <label className="col-form-label tekila4">User first name</label>
+                                                    <label className="col-form-label tekila4">Alok</label>
                                                 </div>
                                                 <div className="col-sm-3"></div>
                                             </div>
@@ -562,7 +562,7 @@ export const StudentDetails = () => {
                                             <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Last Name</label>
                                             <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
                                                 <div className="col-sm-9 col-xs-9 pl-0">
-                                                    <label className="col-form-label tekila4">User last name</label>
+                                                    <label className="col-form-label tekila4">Singh</label>
                                                 </div>
                                                 <div className="col-sm-3"></div>
                                             </div>
@@ -612,7 +612,7 @@ export const StudentDetails = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-12 pt-16px mb-5">
+                        <div className="col-md-12 pt-16px mb-4">
                             <div className="tekila1">
                                 <div className="box-header cmpy-prfl-a4 cmp-prfl-brdr-btm">
                                     <div className="row m-0">
@@ -1114,7 +1114,7 @@ export const StudentDetails = () => {
                         <div className="col-sm-8 col-xs-8 pl-0 row m-0 pr-0">
                             <div className="col-sm-12 col-xs-12 pr-0 pl-0 row m-0 cmpy-prfl-cspdd1">
                                 <div className="col-sm-12 pl-0 pr-0 mb-2">
-                                    <input type="text" className="tekila6" id="mdlinpfld421" placeholder="First Name" autocomplete="off" maxlength="30" defaultValue="User's First Name" />
+                                    <input type="text" className="tekila6" id="mdlinpfld421" placeholder="First Name" autocomplete="off" maxlength="30" defaultValue="Alok" />
                                     <div className="flderrmsgdv" id="mdlinpflderr421">Please enter first name</div>
                                 </div>
                             </div>
@@ -1125,7 +1125,7 @@ export const StudentDetails = () => {
                         <div className="col-sm-8 col-xs-8 pl-0 row m-0 pr-0">
                             <div className="col-sm-12 col-xs-12 pr-0 pl-0 row m-0 cmpy-prfl-cspdd1">
                                 <div className="col-sm-12 pl-0 pr-0 mb-2">
-                                    <input type="text" className="tekila6" id="mdlinpfld422" placeholder="Last Name" autocomplete="off" maxlength="30" defaultValue="User's Last Name" />
+                                    <input type="text" className="tekila6" id="mdlinpfld422" placeholder="Last Name" autocomplete="off" maxlength="30" defaultValue="Singh" />
                                     <div className="flderrmsgdv" id="mdlinpflderr422">Please enter last name</div>
                                 </div>
                             </div>

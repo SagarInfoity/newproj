@@ -63,15 +63,25 @@ export const DashboardIndex = () => {
         <Headermain />
 
         <div className="be-wrapper be-login innerwrapper" id="login">
-            <div className="padding mbvwpd">
-                <div className="row tab-content mb-3 mt-4">
+            <div className="padding mbvwpd pt-1">
+                <div className="row tab-content mb-3">
                     <div className="col-sm-12 row tab-pane cstmtab-pane animate fadeIn text-muted active pt-0 tbldtaa1" id="tab1">
                         <div className="col-sm-12 col-md-12" id="survytbl">
                             <div>
+                                <div className="col-sm-12 mb-4">
+                                    <h2 className="hdnczxccs">
+                                        Hello, Nitin
+                                    </h2>
+                                </div>
+                            </div>
+                            <div>
                                 <div className="col-sm-12">
                                     <div className="dshbrd-dvv1 col-sm-12 row ml-0 mr-0">
-                                        <div className="col-sm-9 mb-1">
-                                            <div className="nwsrvdvdvd1">Table Heading</div>
+                                        <div className="col-sm-9 mt-2 mb-2">
+                                            <div className="nwsrvdvdvd1">Coventry University Students</div>
+                                        </div>
+                                        <div className="col-sm-3 text-right">
+                                            <input className="nwsrvdvdvi1" placeholder="Search Student..." type="text" style={{width: "95%"}} />
                                         </div>
                                     </div>
                                 </div>
@@ -88,26 +98,35 @@ export const DashboardIndex = () => {
                                                     <div className="table-responsive ht-auto">
 
 
-                                                        <table id="nwsrvytbblll" className="table brdr-none cstmtable2 v-middle p-0 m-0 box">
+                                                        <table id="nwsrvytbblll" className="table brdr-none cstmtable2 mntblcstmxz v-middle p-0 m-0 box">
                                                             <thead>
                                                                 <tr className="cstmsrtbthdbrdr">
-                                                                    <th className="pl-24px tblsccshdng">Students</th>
-                                                                    <th className="tblsccshdng">Review Period</th>
-                                                                    <th className="tblsccshdng pl-0">Review Progress</th>
-                                                                    <th />
+                                                                    <th className="pl-24px tblsccshdng" style={{padding: "0.8rem 0.5rem"}}>Students Name</th>
+                                                                    <th className="tblsccshdng" style={{padding: "0.8rem 0.5rem"}}>Date Added / Modified</th>
+                                                                    <th className="tblsccshdng" style={{padding: "0.8rem 0.5rem"}}>Review Progress</th>
+                                                                    <th style={{padding: "0.8rem 0.5rem"}} />
                                                                 </tr>
                                                             </thead>
-                                                            <tbody className="ht-cstmtbdysvy cstmsrtbtbdybrdr cstmmxhtbdytbb2">
+                                                            <tbody className="ht-cstmtbdysvy cstmsrtbtbdybrdr cstmmxhtbdytbb2 cstmmxhtbdytbb2cxz">
 
                                                                 <tr>
                                                                     <td>
                                                                         <Link to='/student/studentdetails' className="tbltddv1 txttrnsfrm-cpl text-truncate cstmwdtbldv crsr-pntr" title>
-                                                                            <img src="https://res.cloudinary.com/infoi/image/upload/v1677570405/Dashboard-Icons/alex_ujdyda.png" className="nwsrvdvdvdimg mr-3" />
-                                                                            <span className="blu-clr">Alex Chin</span>
+                                                                            <div className="row m-0 col-sm-12 p-0">
+                                                                                <div className="col-sm-2 p-0">
+                                                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB5U2CHpliMtpWAoFmM6smVO_t0yErb3tfsg&usqp=CAU" className="imgczxccs mr-3" />
+                                                                                </div>
+                                                                                <div className="col-sm-8 p-0 pt-1">
+                                                                                    <span className="blu-clr">Alok Singh</span>
+                                                                                    <div className="fs-14px pt-1"  style={{color: "#767e96"}}>
+                                                                                        CAMS ID-97311
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
                                                                         </Link>
                                                                     </td>
                                                                     <td className="cstmtblltbwddwd">
-                                                                        <span className="tbltddv3">Feb 20, 2023 - Apr 20, 2023</span>
+                                                                        <span className="tbltddv3">May 20, 2023 - May 27, 2023</span>
                                                                     </td>
                                                                     <td>
                                                                         <div className="srvytblprgbrsvdv">
@@ -119,7 +138,7 @@ export const DashboardIndex = () => {
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td className="text-right">
+                                                                    <td className="text-center">
                                                                         <Link to='/student/studentreviewdetails'>
                                                                             <button className="modalRedBtn cstmmbtnn">Start</button>
                                                                         </Link>
@@ -127,13 +146,22 @@ export const DashboardIndex = () => {
                                                                 </tr>
                                                                 <tr>
                                                                     <td>
-                                                                        <div className="tbltddv1 txttrnsfrm-cpl text-truncate cstmwdtbldv crsr-pntr" title>
-                                                                            <img src="../Images/user_green.png" className="nwsrvdvdvdimg mr-3" />
-                                                                            <span className="blu-clr">Vedant Patel</span>
-                                                                        </div>
+                                                                        <Link to='/student/studentdetails' className="tbltddv1 txttrnsfrm-cpl text-truncate cstmwdtbldv crsr-pntr" title>
+                                                                            <div className="row m-0 col-sm-12 p-0">
+                                                                                <div className="col-sm-2 p-0">
+                                                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJoX1J3XxetP1PFojolzBKIflBncRju1mOvA&usqp=CAU" className="imgczxccs mr-3" />
+                                                                                </div>
+                                                                                <div className="col-sm-8 p-0 pt-1">
+                                                                                    <span className="blu-clr">Anamika Kumari</span>
+                                                                                    <div className="fs-14px pt-1"  style={{color: "#767e96"}}>
+                                                                                        CAMS ID-97312
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </Link>
                                                                     </td>
                                                                     <td className="cstmtblltbwddwd">
-                                                                        <span className="tbltddv3">Feb 20, 2023 - Apr 20, 2023</span>
+                                                                        <span className="tbltddv3">June 02, 2023 - June 15, 2023</span>
                                                                     </td>
                                                                     <td>
                                                                         <div className="srvytblprgbrsvdv">
@@ -145,8 +173,465 @@ export const DashboardIndex = () => {
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td className="text-right">
-                                                                        <button className="modalRedBtn cstmmbtnn">Start</button>
+                                                                    <td className="text-center">
+                                                                        <Link to='/student/studentreviewdetails'>
+                                                                            <button className="modalGrayBtn cstmmbtnn">View</button>
+                                                                        </Link>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <Link to='/student/studentdetails' className="tbltddv1 txttrnsfrm-cpl text-truncate cstmwdtbldv crsr-pntr" title>
+                                                                            <div className="row m-0 col-sm-12 p-0">
+                                                                                <div className="col-sm-2 p-0">
+                                                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxPuf2ZlP6bbOp_29p90V0u1fUHslZP_qTfQ&usqp=CAU" className="imgczxccs mr-3" />
+                                                                                </div>
+                                                                                <div className="col-sm-8 p-0 pt-1">
+                                                                                    <span className="blu-clr">Arvind Singh</span>
+                                                                                    <div className="fs-14px pt-1"  style={{color: "#767e96"}}>
+                                                                                        CAMS ID-97313
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </Link>
+                                                                    </td>
+                                                                    <td className="cstmtblltbwddwd">
+                                                                        <span className="tbltddv3">July 12, 2023 - July 28, 2023</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div className="srvytblprgbrsvdv">
+                                                                            <div className="progress prgrs-wd-cstm my-2 ml-2">
+                                                                                <div className="progress-bar primary" style={{ width: `0%` }}></div>
+                                                                            </div>
+                                                                            <div className="text-left tbltddv4">
+                                                                                <span className="tblsvprgstxt">Not Started</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td className="text-center">
+                                                                        <Link to='/student/studentreviewdetails'>
+                                                                            <button className="modalRedBtn cstmmbtnn">Start</button>
+                                                                        </Link>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <Link to='/student/studentdetails' className="tbltddv1 txttrnsfrm-cpl text-truncate cstmwdtbldv crsr-pntr" title>
+                                                                            <div className="row m-0 col-sm-12 p-0">
+                                                                                <div className="col-sm-2 p-0">
+                                                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF2stjG9Q5bEdZYo78ykAFGmChUtLMmYxFAQ&usqp=CAU" className="imgczxccs mr-3" />
+                                                                                </div>
+                                                                                <div className="col-sm-8 p-0 pt-1">
+                                                                                    <span className="blu-clr">Ravi Kumar</span>
+                                                                                    <div className="fs-14px pt-1"  style={{color: "#767e96"}}>
+                                                                                        CAMS ID-97314
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </Link>
+                                                                    </td>
+                                                                    <td className="cstmtblltbwddwd">
+                                                                        <span className="tbltddv3">Aug 01, 2023 - Aug 09, 2023</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div className="srvytblprgbrsvdv">
+                                                                            <div className="progress prgrs-wd-cstm my-2 ml-2">
+                                                                                <div className="progress-bar primary" style={{ width: `100%` }}></div>
+                                                                            </div>
+                                                                            <div className="text-left tbltddv4" >
+                                                                                <span className="tblsvprgstxt">Completed</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td className="text-center">
+                                                                        <Link to='/student/studentreviewdetails'>
+                                                                            <button className="modalGrayBtn cstmmbtnn">View</button>
+                                                                        </Link>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <Link to='/student/studentdetails' className="tbltddv1 txttrnsfrm-cpl text-truncate cstmwdtbldv crsr-pntr" title>
+                                                                            <div className="row m-0 col-sm-12 p-0">
+                                                                                <div className="col-sm-2 p-0">
+                                                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbGiIrHMzKOyH9fMyfrgxBC64VZcK1pwzL_A&usqp=CAU" className="imgczxccs mr-3" />
+                                                                                </div>
+                                                                                <div className="col-sm-8 p-0 pt-1">
+                                                                                    <span className="blu-clr">Krish Kumar</span>
+                                                                                    <div className="fs-14px pt-1"  style={{color: "#767e96"}}>
+                                                                                        CAMS ID-97315
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </Link>
+                                                                    </td>
+                                                                    <td className="cstmtblltbwddwd">
+                                                                        <span className="tbltddv3">July 12, 2023 - July 28, 2023</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div className="srvytblprgbrsvdv">
+                                                                            <div className="progress prgrs-wd-cstm my-2 ml-2">
+                                                                                <div className="progress-bar primary" style={{ width: `0%` }}></div>
+                                                                            </div>
+                                                                            <div className="text-left tbltddv4">
+                                                                                <span className="tblsvprgstxt">Not Started</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td className="text-center">
+                                                                        <Link to='/student/studentreviewdetails'>
+                                                                            <button className="modalRedBtn cstmmbtnn">Start</button>
+                                                                        </Link>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <Link to='/student/studentdetails' className="tbltddv1 txttrnsfrm-cpl text-truncate cstmwdtbldv crsr-pntr" title>
+                                                                            <div className="row m-0 col-sm-12 p-0">
+                                                                                <div className="col-sm-2 p-0">
+                                                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFvLRtA5t4W2uOSkbMdg2mPGt7gm4IQ7hyEA&usqp=CAU" className="imgczxccs mr-3" />
+                                                                                </div>
+                                                                                <div className="col-sm-8 p-0 pt-1">
+                                                                                    <span className="blu-clr">Dhruv</span>
+                                                                                    <div className="fs-14px pt-1"  style={{color: "#767e96"}}>
+                                                                                        CAMS ID-97316
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </Link>
+                                                                    </td>
+                                                                    <td className="cstmtblltbwddwd">
+                                                                        <span className="tbltddv3">Aug 01, 2023 - Aug 09, 2023</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div className="srvytblprgbrsvdv">
+                                                                            <div className="progress prgrs-wd-cstm my-2 ml-2">
+                                                                                <div className="progress-bar primary" style={{ width: `100%` }}></div>
+                                                                            </div>
+                                                                            <div className="text-left tbltddv4" >
+                                                                                <span className="tblsvprgstxt">Completed</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td className="text-center">
+                                                                        <Link to='/student/studentreviewdetails'>
+                                                                            <button className="modalGrayBtn cstmmbtnn">View</button>
+                                                                        </Link>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <Link to='/student/studentdetails' className="tbltddv1 txttrnsfrm-cpl text-truncate cstmwdtbldv crsr-pntr" title>
+                                                                            <div className="row m-0 col-sm-12 p-0">
+                                                                                <div className="col-sm-2 p-0">
+                                                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXakDEi9q8sIvlZNI3j_jCj3k8pL5yJqSzMg&usqp=CAU" className="imgczxccs mr-3" />
+                                                                                </div>
+                                                                                <div className="col-sm-8 p-0 pt-1">
+                                                                                    <span className="blu-clr">Arjun</span>
+                                                                                    <div className="fs-14px pt-1"  style={{color: "#767e96"}}>
+                                                                                        CAMS ID-97317
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </Link>
+                                                                    </td>
+                                                                    <td className="cstmtblltbwddwd">
+                                                                        <span className="tbltddv3">July 12, 2023 - July 28, 2023</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div className="srvytblprgbrsvdv">
+                                                                            <div className="progress prgrs-wd-cstm my-2 ml-2">
+                                                                                <div className="progress-bar primary" style={{ width: `0%` }}></div>
+                                                                            </div>
+                                                                            <div className="text-left tbltddv4">
+                                                                                <span className="tblsvprgstxt">Not Started</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td className="text-center">
+                                                                        <Link to='/student/studentreviewdetails'>
+                                                                            <button className="modalRedBtn cstmmbtnn">Start</button>
+                                                                        </Link>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <Link to='/student/studentdetails' className="tbltddv1 txttrnsfrm-cpl text-truncate cstmwdtbldv crsr-pntr" title>
+                                                                            <div className="row m-0 col-sm-12 p-0">
+                                                                                <div className="col-sm-2 p-0">
+                                                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6uPXEyrXLvZq6LYKggwrWTXHlb1xGG589oQ&usqp=CAU" className="imgczxccs mr-3" />
+                                                                                </div>
+                                                                                <div className="col-sm-8 p-0 pt-1">
+                                                                                    <span className="blu-clr">Aahan</span>
+                                                                                    <div className="fs-14px pt-1"  style={{color: "#767e96"}}>
+                                                                                        CAMS ID-97318
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </Link>
+                                                                    </td>
+                                                                    <td className="cstmtblltbwddwd">
+                                                                        <span className="tbltddv3">Aug 01, 2023 - Aug 09, 2023</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div className="srvytblprgbrsvdv">
+                                                                            <div className="progress prgrs-wd-cstm my-2 ml-2">
+                                                                                <div className="progress-bar primary" style={{ width: `100%` }}></div>
+                                                                            </div>
+                                                                            <div className="text-left tbltddv4" >
+                                                                                <span className="tblsvprgstxt">Completed</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td className="text-center">
+                                                                        <Link to='/student/studentreviewdetails'>
+                                                                            <button className="modalGrayBtn cstmmbtnn">View</button>
+                                                                        </Link>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <Link to='/student/studentdetails' className="tbltddv1 txttrnsfrm-cpl text-truncate cstmwdtbldv crsr-pntr" title>
+                                                                            <div className="row m-0 col-sm-12 p-0">
+                                                                                <div className="col-sm-2 p-0">
+                                                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTslDXobKRxZrSbjHv07rFFNw9X2NywwgTiBg&usqp=CAU" className="imgczxccs mr-3" />
+                                                                                </div>
+                                                                                <div className="col-sm-8 p-0 pt-1">
+                                                                                    <span className="blu-clr">Aditi Singh</span>
+                                                                                    <div className="fs-14px pt-1"  style={{color: "#767e96"}}>
+                                                                                        CAMS ID-97319
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </Link>
+                                                                    </td>
+                                                                    <td className="cstmtblltbwddwd">
+                                                                        <span className="tbltddv3">July 12, 2023 - July 28, 2023</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div className="srvytblprgbrsvdv">
+                                                                            <div className="progress prgrs-wd-cstm my-2 ml-2">
+                                                                                <div className="progress-bar primary" style={{ width: `0%` }}></div>
+                                                                            </div>
+                                                                            <div className="text-left tbltddv4">
+                                                                                <span className="tblsvprgstxt">Not Started</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td className="text-center">
+                                                                        <Link to='/student/studentreviewdetails'>
+                                                                            <button className="modalRedBtn cstmmbtnn">Start</button>
+                                                                        </Link>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <Link to='/student/studentdetails' className="tbltddv1 txttrnsfrm-cpl text-truncate cstmwdtbldv crsr-pntr" title>
+                                                                            <div className="row m-0 col-sm-12 p-0">
+                                                                                <div className="col-sm-2 p-0">
+                                                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU8ioXloem7GF5QVUkheZGqFnWTN1efMK2eA&usqp=CAU" className="imgczxccs mr-3" />
+                                                                                </div>
+                                                                                <div className="col-sm-8 p-0 pt-1">
+                                                                                    <span className="blu-clr">Seema Devi</span>
+                                                                                    <div className="fs-14px pt-1"  style={{color: "#767e96"}}>
+                                                                                        CAMS ID-97320
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </Link>
+                                                                    </td>
+                                                                    <td className="cstmtblltbwddwd">
+                                                                        <span className="tbltddv3">Aug 01, 2023 - Aug 09, 2023</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div className="srvytblprgbrsvdv">
+                                                                            <div className="progress prgrs-wd-cstm my-2 ml-2">
+                                                                                <div className="progress-bar primary" style={{ width: `100%` }}></div>
+                                                                            </div>
+                                                                            <div className="text-left tbltddv4" >
+                                                                                <span className="tblsvprgstxt">Completed</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td className="text-center">
+                                                                        <Link to='/student/studentreviewdetails'>
+                                                                            <button className="modalGrayBtn cstmmbtnn">View</button>
+                                                                        </Link>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <Link to='/student/studentdetails' className="tbltddv1 txttrnsfrm-cpl text-truncate cstmwdtbldv crsr-pntr" title>
+                                                                            <div className="row m-0 col-sm-12 p-0">
+                                                                                <div className="col-sm-2 p-0">
+                                                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1jcFYyetCV44kE4wV82m7AFb0GtFjfR7BsA&usqp=CAU" className="imgczxccs mr-3" />
+                                                                                </div>
+                                                                                <div className="col-sm-8 p-0 pt-1">
+                                                                                    <span className="blu-clr">Aahana Rani</span>
+                                                                                    <div className="fs-14px pt-1"  style={{color: "#767e96"}}>
+                                                                                        CAMS ID-97321
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </Link>
+                                                                    </td>
+                                                                    <td className="cstmtblltbwddwd">
+                                                                        <span className="tbltddv3">July 12, 2023 - July 28, 2023</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div className="srvytblprgbrsvdv">
+                                                                            <div className="progress prgrs-wd-cstm my-2 ml-2">
+                                                                                <div className="progress-bar primary" style={{ width: `0%` }}></div>
+                                                                            </div>
+                                                                            <div className="text-left tbltddv4">
+                                                                                <span className="tblsvprgstxt">Not Started</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td className="text-center">
+                                                                        <Link to='/student/studentreviewdetails'>
+                                                                            <button className="modalRedBtn cstmmbtnn">Start</button>
+                                                                        </Link>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <Link to='/student/studentdetails' className="tbltddv1 txttrnsfrm-cpl text-truncate cstmwdtbldv crsr-pntr" title>
+                                                                            <div className="row m-0 col-sm-12 p-0">
+                                                                                <div className="col-sm-2 p-0">
+                                                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRV77UeyM3jGaVvrGfIUtm7aYqCR8O4Z05gQ&usqp=CAU" className="imgczxccs mr-3" />
+                                                                                </div>
+                                                                                <div className="col-sm-8 p-0 pt-1">
+                                                                                    <span className="blu-clr">Anjali Singh</span>
+                                                                                    <div className="fs-14px pt-1"  style={{color: "#767e96"}}>
+                                                                                        CAMS ID-97322
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </Link>
+                                                                    </td>
+                                                                    <td className="cstmtblltbwddwd">
+                                                                        <span className="tbltddv3">Aug 01, 2023 - Aug 09, 2023</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div className="srvytblprgbrsvdv">
+                                                                            <div className="progress prgrs-wd-cstm my-2 ml-2">
+                                                                                <div className="progress-bar primary" style={{ width: `100%` }}></div>
+                                                                            </div>
+                                                                            <div className="text-left tbltddv4" >
+                                                                                <span className="tblsvprgstxt">Completed</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td className="text-center">
+                                                                        <Link to='/student/studentreviewdetails'>
+                                                                            <button className="modalGrayBtn cstmmbtnn">View</button>
+                                                                        </Link>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <Link to='/student/studentdetails' className="tbltddv1 txttrnsfrm-cpl text-truncate cstmwdtbldv crsr-pntr" title>
+                                                                            <div className="row m-0 col-sm-12 p-0">
+                                                                                <div className="col-sm-2 p-0">
+                                                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn0x1htT8a8m5hOa7QTbMgDkgCRxjmHNQaWg&usqp=CAU" className="imgczxccs mr-3" />
+                                                                                </div>
+                                                                                <div className="col-sm-8 p-0 pt-1">
+                                                                                    <span className="blu-clr">Ajay Dudeja</span>
+                                                                                    <div className="fs-14px pt-1"  style={{color: "#767e96"}}>
+                                                                                        CAMS ID-97323
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </Link>
+                                                                    </td>
+                                                                    <td className="cstmtblltbwddwd">
+                                                                        <span className="tbltddv3">July 12, 2023 - July 28, 2023</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div className="srvytblprgbrsvdv">
+                                                                            <div className="progress prgrs-wd-cstm my-2 ml-2">
+                                                                                <div className="progress-bar primary" style={{ width: `0%` }}></div>
+                                                                            </div>
+                                                                            <div className="text-left tbltddv4">
+                                                                                <span className="tblsvprgstxt">Not Started</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td className="text-center">
+                                                                        <Link to='/student/studentreviewdetails'>
+                                                                            <button className="modalRedBtn cstmmbtnn">Start</button>
+                                                                        </Link>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <Link to='/student/studentdetails' className="tbltddv1 txttrnsfrm-cpl text-truncate cstmwdtbldv crsr-pntr" title>
+                                                                            <div className="row m-0 col-sm-12 p-0">
+                                                                                <div className="col-sm-2 p-0">
+                                                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFQ8g9Dtd1sWV93jeenBwmjoCz0nOzLxA3oQ&usqp=CAU" className="imgczxccs mr-3" />
+                                                                                </div>
+                                                                                <div className="col-sm-8 p-0 pt-1">
+                                                                                    <span className="blu-clr">Divya Singh</span>
+                                                                                    <div className="fs-14px pt-1"  style={{color: "#767e96"}}>
+                                                                                        CAMS ID-97324
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </Link>
+                                                                    </td>
+                                                                    <td className="cstmtblltbwddwd">
+                                                                        <span className="tbltddv3">Aug 01, 2023 - Aug 09, 2023</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div className="srvytblprgbrsvdv">
+                                                                            <div className="progress prgrs-wd-cstm my-2 ml-2">
+                                                                                <div className="progress-bar primary" style={{ width: `100%` }}></div>
+                                                                            </div>
+                                                                            <div className="text-left tbltddv4" >
+                                                                                <span className="tblsvprgstxt">Completed</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td className="text-center">
+                                                                        <Link to='/student/studentreviewdetails'>
+                                                                            <button className="modalGrayBtn cstmmbtnn">View</button>
+                                                                        </Link>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <Link to='/student/studentdetails' className="tbltddv1 txttrnsfrm-cpl text-truncate cstmwdtbldv crsr-pntr" title>
+                                                                            <div className="row m-0 col-sm-12 p-0">
+                                                                                <div className="col-sm-2 p-0">
+                                                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4N0JnlsPb2s68-q5c_NHBGUR_Yeygn7L7E7xd4k98Mx6IPhhqvRw9cwSEXhCf04wb150&usqp=CAU" className="imgczxccs mr-3" />
+                                                                                </div>
+                                                                                <div className="col-sm-8 p-0 pt-1">
+                                                                                    <span className="blu-clr">Raghav</span>
+                                                                                    <div className="fs-14px pt-1"  style={{color: "#767e96"}}>
+                                                                                        CAMS ID-97325
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </Link>
+                                                                    </td>
+                                                                    <td className="cstmtblltbwddwd">
+                                                                        <span className="tbltddv3">Aug 01, 2023 - Aug 09, 2023</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div className="srvytblprgbrsvdv">
+                                                                            <div className="progress prgrs-wd-cstm my-2 ml-2">
+                                                                                <div className="progress-bar primary" style={{ width: `100%` }}></div>
+                                                                            </div>
+                                                                            <div className="text-left tbltddv4" >
+                                                                                <span className="tblsvprgstxt">Completed</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td className="text-center">
+                                                                        <Link to='/student/studentreviewdetails'>
+                                                                            <button className="modalGrayBtn cstmmbtnn">View</button>
+                                                                        </Link>
                                                                     </td>
                                                                 </tr>
 
