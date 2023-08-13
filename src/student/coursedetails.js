@@ -611,7 +611,7 @@ export const StudentCourseDetails = () => {
                                 </div>
                                 <div className="box-body" id="dtlsgnrlinfo-viwfld">
                                     <form>
-                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 mt-1 pb-2 ">
                                             <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Course Name</label>
                                             <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
                                                 <div className="col-sm-9 col-xs-9 pl-0">
@@ -620,7 +620,7 @@ export const StudentCourseDetails = () => {
                                                 <div className="col-sm-3"></div>
                                             </div>
                                         </div>
-                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
                                             <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">University Name</label>
                                             <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
                                                 <div className="col-sm-9 col-xs-9 pl-0">
@@ -629,25 +629,25 @@ export const StudentCourseDetails = () => {
                                                 <div className="col-sm-3"></div>
                                             </div>
                                         </div>
-                                        <div className="form-group row cmp-prfl-mtcsfld ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 mb-3">
+                                        <div className="form-group row  ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 mb-3">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Country</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">Crizac Ltd</label>
                                             </div>
                                         </div>
-                                        <div className="form-group row cmp-prfl-mtcsfld ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 mb-3">
+                                        <div className="form-group row  ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 mb-3">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Published Tuition Fees</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">16600.0000</label>
                                             </div>
                                         </div>
-                                        <div className="form-group row cmp-prfl-mtcsfld ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 mb-3">
+                                        <div className="form-group row  ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 mb-3">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Scholarship</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">Contact For Scholarship</label>
                                             </div>
                                         </div>
-                                        <div className="form-group row cmp-prfl-mtcsfld ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 mb-3">
+                                        <div className="form-group row  ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 mb-3">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Fees (CAS)</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">€0</label>

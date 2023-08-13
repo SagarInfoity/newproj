@@ -610,7 +610,7 @@ export const StudentAcademicDetails = () => {
                                 </div>
                                 <div className="box-body" id="dtlsgnrlinfo-viwfld">
                                     <form>
-                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 mt-1 pb-2 ">
                                             <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Board State*</label>
                                             <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
                                                 <div className="col-sm-9 col-xs-9 pl-0">
@@ -619,7 +619,7 @@ export const StudentAcademicDetails = () => {
                                                 <div className="col-sm-3"></div>
                                             </div>
                                         </div>
-                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                        <div className="form-group row cmpy-prfl-rwdvhr ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
                                             <label htmlFor="inputEmail3" className="col-sm-4 col-xs-4 col-form-label tekila3">Year of Passing*</label>
                                             <div className="col-sm-8 col-xs-8 pl-0 row m-0" id="fielddv1">
                                                 <div className="col-sm-9 col-xs-9 pl-0">
@@ -628,7 +628,7 @@ export const StudentAcademicDetails = () => {
                                                 <div className="col-sm-3"></div>
                                             </div>
                                         </div>
-                                        <div className="form-group row cmp-prfl-mtcsfld ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 mb-3">
+                                        <div className="form-group row  ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 mb-3">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">English Marks*</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">90</label>
@@ -677,25 +677,25 @@ export const StudentAcademicDetails = () => {
                                 </div>
                                 <div className="box-body" id="contact">
                                     <form>
-                                        <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                        <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-3 mt-1 pb-2 ">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Board State*</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">New Delhi</label>
                                             </div>
                                         </div>
-                                        <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                        <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Board Name*</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">CBSE</label>
                                             </div>
                                         </div>
-                                        <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                        <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Year of Passing*</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">2022</label>
                                             </div>
                                         </div>
-                                        <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                        <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Status</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">
@@ -704,13 +704,13 @@ export const StudentAcademicDetails = () => {
                                                 </label>
                                             </div>
                                         </div>
-                                        <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                        <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">12th Marks (%)</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">80</label>
                                             </div>
                                         </div>
-                                        <div className="form-group row cmp-prfl-mtcsfld mb-3 ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4">
+                                        <div className="form-group row  mb-3 ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">English Marks</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">90</label>
@@ -759,25 +759,25 @@ export const StudentAcademicDetails = () => {
                                 </div>
                                 <div className="box-body" id="contact">
                                     <form>
-                                    <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                    <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-3 mt-1 pb-2 ">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Univeristy State*</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">New Delhi</label>
                                             </div>
                                         </div>
-                                        <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                        <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Institution Name*</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">XYZ College</label>
                                             </div>
                                         </div>
-                                        <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                        <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Year of Passing*</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">2024</label>
                                             </div>
                                         </div>
-                                        <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                        <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Status</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">
@@ -786,13 +786,13 @@ export const StudentAcademicDetails = () => {
                                                 </label>
                                             </div>
                                         </div>
-                                        <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                        <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Degree Marks (%)</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">80</label>
                                             </div>
                                         </div>
-                                        <div className="form-group row cmp-prfl-mtcsfld mb-3 ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4">
+                                        <div className="form-group row  mb-3 ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Prev Qualification</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">Not Applicable</label>
@@ -841,13 +841,13 @@ export const StudentAcademicDetails = () => {
                                 </div>
                                 <div className="box-body" id="contact">
                                     <form>
-                                    <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                    <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-3 mt-1 pb-2 ">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">English*</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">IELTS</label>
                                             </div>
                                         </div>
-                                        <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld">
+                                        <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2 ">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">Status</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">
@@ -856,7 +856,7 @@ export const StudentAcademicDetails = () => {
                                                 </label>
                                             </div>
                                         </div>
-                                        <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-3 pb-4 cmp-prfl-mtcsfld mb-3">
+                                        <div className="form-group row ml-0 mr-0 cmpy-prfl-a6 pt-2 pb-2  mb-3">
                                             <label htmlFor className="col-sm-4 col-xs-4 col-form-label tekila3">IELTS/ PTE/ TOEFL <br/>/Duolingo/ 12th English Score</label>
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <label className="col-form-label tekila4">8</label>
