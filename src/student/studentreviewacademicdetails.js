@@ -33,6 +33,18 @@ export const StudentReviewAcademicDetails = () => {
         $('#fielddv1-1').removeClass('hide');
     }
 
+    const nxtpgrt1 = () => {
+        const icon = document.getElementById('nxtpgrt1icn1');
+        const text = document.getElementById('nxtpgrt1txt1');
+        
+        icon.classList.remove('hide');
+        text.classList.add('hide');
+        
+        setTimeout(() => {
+          window.location.href = "/student/studentreviewcoursedetails";
+        }, 1000);
+      };
+
     const savefld1 = () => {
         var inpp1 = $('#inpfld1');
         var inp1 = $('#inpfld1').val();
@@ -512,14 +524,16 @@ export const StudentReviewAcademicDetails = () => {
         <div className="padding cstmdpd mbvwpd" id="prflpg">
             <div className="row mt-6-cstm mt-4">
                 <div className="col-md-2 col-lg-2 pr-0 tblt-vw-prfl1">
-                    <div>
-                        <div>
-                            <StudentReviewLogo />
-                        </div>
-                    </div>
-                    <div className="tblt-vw-prfl2" style={{paddingTop: 10, paddingLeft: 10}}>
-                        <StudentReviewSidebar />
-                    </div>
+                    <div style={{position: 'fixed'}}>
+                            <div>
+                                <div>
+                                    <StudentReviewLogo />
+                                </div>
+                            </div>
+                            <div className="tblt-vw-prfl2" style={{paddingTop: 10, paddingLeft: 10}}>
+                                <StudentReviewSidebar />
+                            </div>
+                        </div>    
                     </div>
                     <div className="col-md-8 cmpy-prfl-a1 cs-st-pd tblt-prfl-vw-dv1">
                         <div className="col-sm-12 col-md-12 mt-2 mb-2">
@@ -654,8 +668,8 @@ export const StudentReviewAcademicDetails = () => {
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <div className="col-sm-9 col-xs-9 pl-0">
                                                     <div className="col-sm-12 pl-0 pr-0 mb-2">
-                                                        <input type="text" className="tekila6" id="cmpnyprflinpfld01" placeholder="12th Marks" autocomplete="off" maxlength="3" defaultValue="95" />
-                                                        <div className="flderrmsgdv" id="cmpnyprflinpfld01-msg">Please enter value</div>
+                                                        <input type="text" className="tekila6 errfldbrdr" id="cmpnyprflinpfld01" placeholder="12th Marks" autocomplete="off" maxlength="3" defaultValue="95" />
+                                                        <div className="flderrmsgdv show" id="cmpnyprflinpfld01-msg">Data mismatched!</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -665,8 +679,8 @@ export const StudentReviewAcademicDetails = () => {
                                             <div className="col-sm-8 col-xs-8 pl-0">
                                                 <div className="col-sm-9 col-xs-9 pl-0">
                                                     <div className="col-sm-12 pl-0 pr-0 mb-2">
-                                                        <input type="text" className="tekila6" id="cmpnyprflinpfld01" placeholder="English Marks" autocomplete="off" maxlength="3" defaultValue="89" />
-                                                        <div className="flderrmsgdv" id="cmpnyprflinpfld01-msg">Please enter value</div>
+                                                        <input type="text" className="tekila6 errfldbrdr" id="cmpnyprflinpfld01" placeholder="English Marks" autocomplete="off" maxlength="3" defaultValue="89" />
+                                                        <div className="flderrmsgdv show" id="cmpnyprflinpfld01-msg">Data mismatched!</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -838,9 +852,15 @@ export const StudentReviewAcademicDetails = () => {
                         </div>
                         <div className="col-md-12 pt-16px">
                             <div className="text-right">
-                                <Button variant="primary modalRedBtn">
-                                    Continue
-                                </Button>
+                                    <Link to="/student/studentreviewdetails">
+                                        <Button variant="primary modalGrayBtn mr-3" style={{minWidth: 80}}>
+                                            Back
+                                        </Button>
+                                    </Link>
+                                    <Button variant="primary modalRedBtn" onClick={nxtpgrt1} style={{minWidth: 100}}>
+                                        <i className="fa fa-spinner fa-spin fs-12px hide" id="nxtpgrt1icn1"></i>
+                                        <span id="nxtpgrt1txt1">Review</span>
+                                    </Button>
                             </div>
                         </div>
                     </div>

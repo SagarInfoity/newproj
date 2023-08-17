@@ -183,8 +183,8 @@ a.prfl-ulla:not([href]):not([tabindex]) {
     position: relative;
     margin-left: 20px;
     font-family: 'Circular-Medium';
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .dsbl-ullacxzxxz1 {
@@ -199,8 +199,7 @@ a.prfl-ulla:not([href]):not([tabindex]) {
     opacity: 1;
     color: #1c2534;
     border-color: transparent;
-    margin-left: 10px !important;
-    padding-left: 18px;
+    margin-left: 20px !important;
 }
 
 .prfl-ullacxzx1.prfl-ulla.prfl-ulla.active {
@@ -261,6 +260,48 @@ a.prfl-ulla:not([href]):not([tabindex]) {
     overflow: hidden;
     white-space: nowrap;
     text-align: center;
+}
+
+.lftsdbrullidsvxz1 {
+    position: absolute;
+    left: -17px;
+    top: 0px;
+    /* background-color: #d6dee9; */
+    padding: 4px;
+}
+
+.lftsdbrullidsvxz2 {
+    position: absolute;
+    left: -22px;
+    top: -5px;
+    /* background-color: #2FC991; */
+    padding: 4px;
+}
+
+.lftsdbrullidsvxz3 {
+    position: absolute;
+    left: -22px;
+    top: -6px;
+    padding: 5px;
+}
+
+.lftsdbrullidsvxz4 {
+    position: absolute;
+    left: -22px;
+    top: -6px;
+    padding: 5px;
+}
+
+.lftsdbrvcdvxs1 {
+    color: #123466;
+    cursor: pointer;
+    font-family: Circular-Medium;
+    font-size: 14px;
+    margin: 16px 0 10px;
+}
+
+.lftsdbrvcdvxs1cs {
+    margin-top: 5px !important;
 }
 
 .ml-1-5rm {

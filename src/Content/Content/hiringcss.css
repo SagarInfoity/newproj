@@ -18,16 +18,20 @@
     font-family: 'Circular-Medium';
 }
 
+.font-med {
+    font-family: "Circular-Medium" !important;
+}
+
 .imgczxccs {
     box-sizing: border-box;
     border-radius: 50%;
     opacity: 1;
     box-shadow: rgb(214, 222, 233) 0px 0px 0px 2px;
     object-fit: cover;
-    min-width: 32px;
-    min-height: 32px;
-    width: 32px;
-    height: 32px;
+    min-width: 36px;
+    min-height: 36px;
+    width: 36px;
+    height: 36px;
 }
 
 .imgczxccs:hover {

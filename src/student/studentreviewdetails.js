@@ -33,6 +33,18 @@ export const StudentReviewDetails = () => {
         $('#fielddv1-1').removeClass('hide');
     }
 
+    const nxtpgrt1 = () => {
+        const icon = document.getElementById('nxtpgrt1icn1');
+        const text = document.getElementById('nxtpgrt1txt1');
+        
+        icon.classList.remove('hide');
+        text.classList.add('hide');
+        
+        setTimeout(() => {
+          window.location.href = "/student/studentreviewacademicdetails";
+        }, 1000);
+      };
+
     const savefld1 = () => {
         var inpp1 = $('#inpfld1');
         var inp1 = $('#inpfld1').val();
@@ -504,17 +516,19 @@ export const StudentReviewDetails = () => {
  
         <div className="be-wrapper be-login innerwrapper mt-4p" id="login">
          
-        <div className="padding cstmdpd mbvwpd" id="prflpg">
-            <div className="row mt-6-cstm mt-4">
-                <div className="col-md-2 col-lg-2 pr-0 tblt-vw-prfl1">
-                    <div>
-                        <div>
-                            <StudentReviewLogo />
+            <div className="padding cstmdpd mbvwpd" id="prflpg">
+                <div className="row mt-6-cstm mt-4">
+                    <div className="col-md-2 col-lg-2 pr-0 tblt-vw-prfl1">
+                        <div style={{position: 'fixed'}}>
+                            <div>
+                                <div>
+                                    <StudentReviewLogo />
+                                </div>
+                            </div>
+                            <div className="tblt-vw-prfl2" style={{paddingTop: 10, paddingLeft: 10}}>
+                                <StudentReviewSidebar />
+                            </div>
                         </div>
-                    </div>
-                    <div className="tblt-vw-prfl2" style={{paddingTop: 10, paddingLeft: 10}}>
-                        <StudentReviewSidebar />
-                    </div>
                     </div>
                     <div className="col-md-8 cmpy-prfl-a1 cs-st-pd tblt-prfl-vw-dv1">
                         <div className="col-sm-12 col-md-12 mt-2 mb-2">
@@ -795,8 +809,9 @@ export const StudentReviewDetails = () => {
                             </div>
                             <div className="col-md-12 pt-16px">
                                 <div className="text-right">
-                                    <Button variant="primary modalRedBtn">
-                                        Continue
+                                    <Button variant="primary modalRedBtn" onClick={nxtpgrt1} style={{minWidth: 100}}>
+                                        <i className="fa fa-spinner fa-spin fs-12px hide" id="nxtpgrt1icn1"></i>
+                                        <span id="nxtpgrt1txt1">Review</span>
                                     </Button>
                                 </div>
                             </div>
