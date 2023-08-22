@@ -809,6 +809,11 @@ export const StudentReviewDetails = () => {
                             </div>
                             <div className="col-md-12 pt-16px">
                                 <div className="text-right">
+                                    <a href='https://partnerportal.coventry.ac.uk/s' target="_blank">
+                                        <Button variant="primary modalGrayBtn mr-3" style={{minWidth: 80}}>
+                                            <span>Sync</span>
+                                        </Button>
+                                    </a>
                                     <Button variant="primary modalRedBtn" onClick={nxtpgrt1} style={{minWidth: 100}}>
                                         <i className="fa fa-spinner fa-spin fs-12px hide" id="nxtpgrt1icn1"></i>
                                         <span id="nxtpgrt1txt1">Review</span>
